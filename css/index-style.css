@@ -54,7 +54,6 @@ hr{
 }
 #hero img{
 width: 100%;
-
 }
 #heroDiv{
   position: absolute;
@@ -78,22 +77,26 @@ width: 100%;
 }
 #links{
   margin-top: 50px;
-  display: grid;
   gap: 50px;
+ 
 }
 #links div{
   width: 90%;
   margin-left: 5%;
-  width: 300px;
-  height: 70px;
-position: relative;
 }
-#links div img{
-  object-fit: contain;
+#link1{
+  display: inline-block;
+  align-items: center;
+  position: relative;
   width: 300px;
-  height: 70px;
+  height: 100px;
 }
-
+#img1{
+  float: left;
+}
+#a1{
+  float: right;
+}
 footer{
   text-align: center;
   margin-top: 30px;
@@ -101,5 +104,4 @@ footer{
   line-height: 1.5;
   margin-bottom: 30px;
   color: orange;
-  
 }
