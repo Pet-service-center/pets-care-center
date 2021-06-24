@@ -83,5 +83,20 @@ opacity: 0.5;
 #links a:nth-child(1){
   background-image: url(../images/Pet-Care-Professional.jpg);
   background-position-y: -90px;
-  background-repeat: n;
+  background-repeat: no-repeat;
+}
+
+#links a:nth-child(2){
+  background-image: url(../images/vet-loans-1030x760.jpg);
+  background-position-y:-100px;
+  background-position-x: -80px;
+  background-repeat: no-repeat;
+}
+
+
+#links a:nth-child(3){
+  background-image: url(../images/basket.jpg);
+  background-position-y:-300px;
+  background-position-x: -300px;
+  background-repeat: no-repeat;
 }
