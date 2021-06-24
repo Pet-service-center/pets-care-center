@@ -1,65 +1,71 @@
-body{
-  
-}
-#logo{
+body {}
+
+#logo {
   width: 100px;
 }
-header{
- align-items: center;
+
+header {
+  align-items: center;
   height: 100px;
   width: 90%;
   margin-left: 5%;
 }
-#HLogo{
+
+#HLogo {
   gap: 10px;
   display: flex;
   align-items: center;
 }
-header{
+
+header {
   display: flex;
   justify-content: space-between;
 }
-#nav{
+
+#nav {
   padding: 20px;
 }
-#nav a{
+
+#nav a {
   padding: 20px;
   text-decoration: none;
   color: orange;
   font-size: 25px;
   margin-left: 10px;
 }
-hr{
+
+hr {
   background-color: orange;
   height: 5px;
   border: none;
   width: 90%;
   margin-left: 5%;
 }
-#hero{
+
+#hero {
   position: relative;
   width: 90%;
   margin-left: 5%;
-  
 }
-#hero img{
-width: 100%;
-opacity: 0.5;
+
+#hero img {
+  width: 100%;
+  opacity: 0.5;
 }
-#heroDiv{
+
+#heroDiv {
   position: absolute;
   top: 75%;
   left: 6%;
   color: hsl(22, 100%, 50%);
-  
 }
+
 #heroDiv p:nth-child(1) {
   font-family: 'Cherry Swash', cursive;
   font-size: 60px;
-
 }
 
-#heroDiv p:nth-child(2){
+#heroDiv p:nth-child(2) {
   font-family: 'Merriweather', serif;
   color: hsl(22, 100%, 50%);
   font-size: 35px;
@@ -67,36 +73,38 @@ opacity: 0.5;
   margin-top: 20px;
   font-weight: bold;
 }
+
 #links {
   margin-top: 50px;
   display: grid;
   gap: 50px;
   height: 400px;
 }
-#links a{
+
+#links a {
   margin: auto;
   text-decoration: none;
   padding: 80px 250px;
-  border-radius:90px;
+  border-radius: 90px;
   color: hsl(22, 100%, 50%);
 }
-#links a:nth-child(1){
+
+#links a:nth-child(1) {
   background-image: url(../images/Pet-Care-Professional.jpg);
   background-position-y: -90px;
   background-repeat: no-repeat;
 }
 
-#links a:nth-child(2){
+#links a:nth-child(2) {
   background-image: url(../images/vet-loans-1030x760.jpg);
-  background-position-y:-100px;
+  background-position-y: -100px;
   background-position-x: -80px;
   background-repeat: no-repeat;
 }
 
-
-#links a:nth-child(3){
+#links a:nth-child(3) {
   background-image: url(../images/basket.jpg);
-  background-position-y:-300px;
+  background-position-y: -300px;
   background-position-x: -300px;
   background-repeat: no-repeat;
 }
