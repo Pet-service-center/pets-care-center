@@ -1,0 +1,87 @@
+body{
+  
+}
+#logo{
+  width: 100px;
+}
+header{
+ align-items: center;
+  height: 100px;
+  width: 90%;
+  margin-left: 5%;
+}
+#HLogo{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+#nav{
+  padding: 20px;
+}
+#nav a{
+  padding: 20px;
+  text-decoration: none;
+  color: orange;
+  font-size: 25px;
+  margin-left: 10px;
+}
+hr{
+  background-color: orange;
+  height: 5px;
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+}
+#hero{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  
+}
+#hero img{
+width: 100%;
+opacity: 0.5;
+}
+#heroDiv{
+  position: absolute;
+  top: 75%;
+  left: 6%;
+  color: hsl(22, 100%, 50%);
+  
+}
+#heroDiv p:nth-child(1) {
+  font-family: 'Cherry Swash', cursive;
+  font-size: 60px;
+
+}
+
+#heroDiv p:nth-child(2){
+  font-family: 'Merriweather', serif;
+  color: hsl(22, 100%, 50%);
+  font-size: 35px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#links {
+  margin-top: 50px;
+  display: grid;
+  gap: 50px;
+  height: 400px;
+}
+#links a{
+  margin: auto;
+  text-decoration: none;
+  padding: 80px 250px;
+  border-radius:90px;
+  color: hsl(22, 100%, 50%);
+}
+#links a:nth-child(1){
+  background-image: url(../images/Pet-Care-Professional.jpg);
+  background-position-y: -90px;
+  background-repeat: n;
+}
