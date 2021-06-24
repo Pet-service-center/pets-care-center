@@ -1,0 +1,20 @@
+main {
+  background-color: thistle;
+  width: 90%;
+  margin-left: 5%;
+}
+
+footer {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  background: violet;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  border-width: 5px;
+  border: dashed blue;
+  float: 10px;
+}
