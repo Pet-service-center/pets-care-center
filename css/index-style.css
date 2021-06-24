@@ -1,6 +1,4 @@
-body{
-  
-}
+
 #logo{
   width: 100px;
 }
@@ -9,26 +7,38 @@ header{
   height: 100px;
   width: 90%;
   margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 #HLogo{
   gap: 10px;
   display: flex;
   align-items: center;
 }
-header{
-  display: flex;
-  justify-content: space-between;
+#HLogo div p:nth-child(1){
+  font-family: 'Indie Flower', cursive;
+  color: orange;
+  font-size: 50px;
 }
-#nav{
-  padding: 20px;
+#HLogo div p:nth-child(2){
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
 }
 #nav a{
   padding: 20px;
   text-decoration: none;
   color: orange;
-  font-size: 25px;
+  font-size: 30px;
   margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.4s;
 }
+#nav a:hover{
+  color: white;
+  background-color: orange;
+}
+
 hr{
   background-color: orange;
   height: 5px;
@@ -40,18 +50,18 @@ hr{
   position: relative;
   width: 90%;
   margin-left: 5%;
-  
+  margin-top: 30px;
 }
 #hero img{
 width: 100%;
-opacity: 0.5;
+
 }
 #heroDiv{
   position: absolute;
   top: 75%;
   left: 6%;
-  color: hsl(22, 100%, 50%);
-  
+  color: orange;
+  -webkit-text-stroke: 1px black;
 }
 #heroDiv p:nth-child(1) {
   font-family: 'Cherry Swash', cursive;
@@ -60,43 +70,36 @@ opacity: 0.5;
 }
 
 #heroDiv p:nth-child(2){
-  font-family: 'Merriweather', serif;
-  color: hsl(22, 100%, 50%);
+  font-family: 'Cherry Swash', cursive;
   font-size: 35px;
   margin-left: 50px;
   margin-top: 20px;
   font-weight: bold;
 }
-#links {
+#links{
   margin-top: 50px;
   display: grid;
   gap: 50px;
-  height: 400px;
 }
-#links a{
-  margin: auto;
-  text-decoration: none;
-  padding: 80px 250px;
-  border-radius:90px;
-  color: hsl(22, 100%, 50%);
+#links div{
+  width: 90%;
+  margin-left: 5%;
+  width: 300px;
+  height: 70px;
+position: relative;
 }
-#links a:nth-child(1){
-  background-image: url(../images/Pet-Care-Professional.jpg);
-  background-position-y: -90px;
-  background-repeat: no-repeat;
-}
-
-#links a:nth-child(2){
-  background-image: url(../images/vet-loans-1030x760.jpg);
-  background-position-y:-100px;
-  background-position-x: -80px;
-  background-repeat: no-repeat;
+#links div img{
+  object-fit: contain;
+  width: 300px;
+  height: 70px;
 }
 
-
-#links a:nth-child(3){
-  background-image: url(../images/basket.jpg);
-  background-position-y:-300px;
-  background-position-x: -300px;
-  background-repeat: no-repeat;
+footer{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: orange;
+  
 }
