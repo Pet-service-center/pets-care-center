@@ -1,0 +1,56 @@
+#logo{
+  width: 100px;
+}
+header{
+ align-items: center;
+  height: 100px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+#HLogo{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+#HLogo div p:nth-child(1){
+  font-family: 'Indie Flower', cursive;
+  color: orange;
+  font-size: 50px;
+}
+#HLogo div p:nth-child(2){
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+#nav a{
+  padding: 20px;
+  text-decoration: none;
+  color: orange;
+  font-size: 30px;
+  margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.4s;
+}
+#nav a:hover{
+  color: white;
+  background-color: orange;
+}
+
+hr{
+  background-color: orange;
+  height: 5px;
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+}
+footer{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: orange;
+  
+}
