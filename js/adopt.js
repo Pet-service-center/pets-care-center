@@ -10,35 +10,35 @@ let turtle = document.getElementById('turtleDiv');
 
 // return random number
 function getRandomInteger(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 // git Unique id for each object
 function getId() {
-    let id;
-    for (let i = 0; i < Animals.all.length; i++) {
-        do {
-            id = getRandomInteger(0, 1000);
+  let id;
+  for (let i = 0; i < Animals.all.length; i++) {
+    do {
+      id = getRandomInteger(0, 1000);
 
-        } while (id === Animals.all[i].id);
-    }
-    return id;
+    } while (id === Animals.all[i].id);
+  }
+  return id;
 }
 
 // set data in local storage
 function setData() {
-    localStorage.setItem('animal', JSON.stringify(Animals.all));
+  localStorage.setItem('animal', JSON.stringify(Animals.all));
 }
 
 // get data from local storage
 function getData() {
-    let data = JSON.parse(localStorage.getItem('animal'));
-    if (data) {
-        Animals.all = data;
+  let data = JSON.parse(localStorage.getItem('animal'));
+  if (data) {
+    Animals.all = data;
 
-    }
+  }
 }
 
 
@@ -46,6 +46,7 @@ getData();
 
 // object
 function Animals(type, description, age, city, phone, img) {
+
     this.id = 0;
     this.type = type;
     this.description = description;
@@ -56,13 +57,15 @@ function Animals(type, description, age, city, phone, img) {
     Animals.all.push(this);
     this.id = getId();
 
+
 }
 
 let descr = '';
 Animals.all = [];
 
-// creat base object 
+// creat base object
 function addMainObj() {
+
     descr = 'This is my beautiful parrot, unfortunately I have a lot of work and do not have time to play with him.. I hope he is happy with the one who will take care of him after me'
     new Animals('parrot', descr, 6, 'Amman', '0784521365', './img/bird1.jpg');
     descr = 'This little one loves food so much..feed it or it will hit you with his beak'
@@ -115,7 +118,7 @@ addMainObj();
 getData();
 
 
-// create card for each object type 
+// create card for each object type
 function render(divSet, typeSet) {
     for (let i = 0; i < Animals.all.length; i++) {
         if (Animals.all[i].type === typeSet) {
@@ -147,11 +150,14 @@ function render(divSet, typeSet) {
             button.setAttribute('id', Animals.all[i].id);
 
         }
+
     }
+  }
 }
 
-// 
+//
 function renderAll() {
+
     render(hamstor, 'hamster');
     render(cat, 'cat');
     render(dog, 'dog');
@@ -164,19 +170,22 @@ renderAll();
 
 // to remove the elemntes from html page
 function cleadDiv() {
+
 hamstor.innerHTML='';
 cat.innerHTML='';
 dog.innerHTML='';
 fish.innerHTML='';
 bird.innerHTML='';
 turtle.innerHTML='';
+
 }
 
 
-// add event 
+// add event
 mainDiv.addEventListener('click', removeAnimals);
 
 function removeAnimals(event) {
+
     // add the the event for button only
     if (event.target.textContent === 'Adoption') {
         for (let i = 0; i < Animals.all.length; i++) {
@@ -240,3 +249,4 @@ function formSubmission(event) {
   }
   
   form.addEventListener('submit', formSubmission);
+

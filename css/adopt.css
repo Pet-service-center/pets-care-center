@@ -1,6 +1,4 @@
 
-
-
 #logo{
     width: 100px;
   }
@@ -76,6 +74,7 @@ div div {
     margin: auto;
     margin-top: 30px;
 }
+
 div div div {
     display: grid;
     grid-template-columns: 1fr;
@@ -128,6 +127,7 @@ top:20px
 div div div  button:hover {
     opacity: 0.7;
   }
+
 
 
 
