@@ -1,5 +1,16 @@
+*{
+  padding:0;
+  margin: 0;
+  
+}
+
+body{
+  margin-top: 20px;
+  
+}
 #logo{
-  width: 100px;
+  width: 70px;
+  
 }
 header{
  align-items: center;
@@ -15,36 +26,175 @@ header{
   align-items: center;
 }
 #HLogo div p:nth-child(1){
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Lobster', cursive;
   color: orange;
-  font-size: 50px;
+  font-size: 55px;
+  
 }
 #HLogo div p:nth-child(2){
   color: orange;
   font-weight: bold;
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 15px;
 }
 #nav a{
-  padding: 20px;
+  padding-top: 10px;
+  padding-right: 100px;
   text-decoration: none;
   color: orange;
-  font-size: 30px;
-  margin-left: 10px;
+  font-size: 20px;
+  margin-left: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: 0.4s;
 }
 #nav a:hover{
   color: white;
   background-color: orange;
+  border-radius:110px ;
 }
 
 hr{
   background-color: orange;
-  height: 5px;
+  height: 1px;
   border: none;
-  width: 90%;
+  width: 85%;
   margin-left: 5%;
+  margin-top: 20px;
 }
+
+
+.content{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 50px 70px;
+  border-radius: 110px;
+  margin-top: 10px;
+  color: #fff;
+  
+  
+}
+
+
+
+.Appointment{
+  
+  font-size: 25px;
+  padding: 30px 100px;
+  color: #ffb833;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  
+}
+
+fieldset{
+  padding-top:50px;
+ background-color:#ffb833;
+ width: 75%;
+ margin: auto;
+ 
+  
+}
+
+form {
+
+  
+  margin-top: 0px;
+  display:flex;
+  justify-content:  space-around;
+  
+}
+
+form label{
+  display: block;
+  padding-bottom: 5px;
+  
+}
+
+form input{
+  margin-bottom: 25px;
+  width: 200px;
+  height: 30px;
+}
+
+#pet {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+#time{
+  width: 200px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.submit-info{
+  padding-top: 30px;
+  display: grid;
+  margin: auto;
+  gap: 10px;
+  background-color:#737373;
+  width: 75%;
+  
+}
+
+.submit-info label{
+  margin: auto;
+}
+
+
+.btns{
+  padding-top: 10px;
+  margin: auto;
+}
+
+.btns button{
+  margin: 10px 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  color:orange;
+  border: 2px solid orange;
+  font-weight: bold;
+  font-size:16px;
+}
+
+textarea {
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
   text-align: center;
   margin-top: 30px;

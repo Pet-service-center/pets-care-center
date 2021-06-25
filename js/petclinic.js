@@ -4,10 +4,9 @@
 /////////////********function to handle the submit of the form*******/////////////
 function appointmentFormSubmission(event) {
   event.preventDefault();
-  let firstName = document.getElementById('fname').value;
-  let lastName = document.getElementById('lname').value;
+  let FullName = document.getElementById('fname').value;
   document.getElementById('appointmentForm').innerHTML = (`${Date()},
-  your form is submited , we will call you soon ${firstName} ${lastName} `);
+  your form is submited , we will call you soon ${FullName}  `);
 }
 
 
