@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+
+#cartLogo{
+    float:right;
+}
+header nav {
+    text-align: right;
+    width:100%;
+    height: 70px;
+    
+   
+  }
+  main{
+      display;grid-template-columns: 40px 20px;
+  }
+ .h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  font-size: 80px;
+    position: relative;
+    font-family:'Sonsie One', cursive ;
+ }
+  #product{
+    background-image: url("https://previews.123rf.com/images/bschonewille/bschonewille1710/bschonewille171000025/88150866-two-young-white-cats-with-shopping-cart-on-black-background.jpg");
+    justify-content: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+      width:100%;
+      min-height: 400px;
+     
+     
+  }
+nav a{
+    padding: 10px 20px;
+    transition: all 550ms;
+}
+#product{
+    color: #d8c0c0;
+    font-family: 'RocknRoll One', sans-serif;
+font-size: 65px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+text-align: center;
+}
+.producttype{
+    text-align: left;
+}
+.producttype a {
+    font-size: 20px;
+    border: rgb(217, 229, 241);
+    border-style: solid;
+    border-radius: 50%;
+    color: seashell;
+}
+
+
+p li {
+    font-size: 20px;
+}
+
+div img {
+    float: left;
+    width: 300px;
+    padding: 5px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .col{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .sales{
+    position: absolute;
+    z-index: 15;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    transform: rotate(-20deg);
+    background: red;
+  color: white;
+  -webkit-animation: beat 1s ease infinite alternate;
+  animation: beat 1s ease infinite alternate;
+  
+  }
