@@ -1,6 +1,15 @@
+*{
+  padding:0;
+  margin: 0;
+  
+}
 
+body{
+  margin-top: 20px;
+}
 #logo{
-  width: 100px;
+  width: 70px;
+  
 }
 header{
  align-items: center;
@@ -16,48 +25,113 @@ header{
   align-items: center;
 }
 #HLogo div p:nth-child(1){
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Lobster', cursive;
   color: orange;
-  font-size: 50px;
+  font-size: 55px;
+  
 }
 #HLogo div p:nth-child(2){
   color: orange;
   font-weight: bold;
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 15px;
 }
 #nav a{
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   color: orange;
-  font-size: 30px;
-  margin-left: 10px;
+  font-size: 20px;
+  margin-left: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: 0.4s;
 }
 #nav a:hover{
   color: white;
   background-color: orange;
+  border-radius:110px ;
 }
 
 hr{
   background-color: orange;
-  height: 5px;
+  height: 1px;
   border: none;
   width: 90%;
   margin-left: 5%;
+  margin-top: 20px;
 }
-#hero{
-  position: relative;
-  width: 90%;
+
+
+.slider{
+  overflow: hidden;
   margin-left: 5%;
-  margin-top: 30px;
+  margin-right: 5%;
+  
+
 }
-#hero img{
-width: 100%;
+
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: scroll 15s  infinite;
+  
 }
+
+.slider figure img{
+  width: 20%;
+  float: left;
+  
+}
+
+
+@keyframes scroll {
+
+  0%{
+    
+    left: 0;
+  }
+
+  20%{
+    left: 0;
+  }
+
+  25%{
+    left: -100%;
+  }
+
+  45%{
+    left: -100%;
+  }
+
+  50%{
+    left: -200%;
+  }
+
+  70%{
+    left: -200%;
+  }
+
+  75%{
+    left: -300%;
+  }
+
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+  
+}
+
+
+
+
+
 #heroDiv{
   position: absolute;
-  top: 75%;
+  top: 90%;
   left: 6%;
   color: orange;
   -webkit-text-stroke: 1px black;
@@ -75,28 +149,63 @@ width: 100%;
   margin-top: 20px;
   font-weight: bold;
 }
-#links{
-  margin-top: 50px;
+.links{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
   gap: 50px;
+  height: 500px;
  
 }
-#links div{
-  width: 90%;
-  margin-left: 5%;
+
+.links button{
+  width: 350px;
+  height: 200px;
+  
+ 
 }
-#link1{
-  display: inline-block;
-  align-items: center;
-  position: relative;
-  width: 300px;
-  height: 100px;
+
+.pit-services , .pit-shop , .pit-adapter{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(../images/best-pets-for-kids-1-1-1024x683.jpeg) ;
+  background-size: cover;
+  box-shadow: 0 40px 70px rgba(0,0,0,.2);
+  border-radius: 110px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align:center;
+  color: white;
+  border: 3px solid orange;
+  
 }
-#img1{
-  float: left;
+
+
+.pit-services:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+  transform: scale(.90);
 }
-#a1{
-  float: right;
+
+.pit-shop{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/shop.jpg)
 }
+
+.pit-adapter{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/vet-loans-1030x760.jpg);
+  content: unset;
+}
+
+
+.pit-shop:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+  transform: scale(.90);
+  
+}
+
+.pit-adapter:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+  transform: scale(.90);
+}
+
+
 footer{
   text-align: center;
   margin-top: 30px;
