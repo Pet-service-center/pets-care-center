@@ -20,14 +20,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   </head>
 
 <body>
 
   <header>
     <section id="HLogo">
-      <img id="logo" src="./images/1396133-middle.png" alt="">
+      <img id="logo" src="./images/aTe6AabAc.png" alt="">
       <div><p>PSC</p>
         <p>Pet Service Center</p></div>
 
@@ -41,24 +46,25 @@
   <hr>
 
   <main>
+   <section class="content">
 
+   
     <section class='Appointment'>
       <p>Request Appointment Please complete this form to request an appointment. We will contact you to confirm your booking. If you have not received confirmation after one business day, please contact us.</p>
     </section>
     <section class="appointmentForm">
       <fieldset class="appointmenFieldSet">
-        <legend>Appointment Requset</legend>
         <form id="appointform" action="">
-          <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname" placeholder="John" required><br>
-          <label for="lname">Last name:</label><br>
-          <input type="text" id="lname" name="lname" placeholder="Bross" required><br><br>
+          <div class="left-side">
+          <label for="fname">Full name:</label>
+          <input type="text" id="fname" name="fname" placeholder="John alsidi" required>
           <label for="email">Enter your email:</label>
           <input type="email" id="email" name="email" placeholder="example@gmail.com">
-          <label for="phoneNumber">Phone Number:</label><br>
-          <label for="phone">Enter a phone number:</label><br><br>
+          <label for="phoneNumber">Phone Number:</label>
           <input type="tel" id="phone" name="phone" placeholder="+962-123-4567891" required><br><br>
-
+        </div>
+        <div class="right-side">
+          <label>pick type</label>
           <select id="pet" name="Pet Type" required>
     <option value="dog">DOG</option>
     <option value="cat">CAT</option>
@@ -71,28 +77,32 @@
           <input type="date" id="Appointment" name="Appointment">
 
           <label for="time">Preferred Time of Day</label>
-          <select id="time" name="Time Type">
+          <select id="time" name="Time Type"> 
              <option value="dog">Early Morning</option>
              <option value="cat">Late Morning</option>
              <option value="bird">Early Afternoon </option>
              <option value="lizard">Late Afternoon </option>
              <option value="other">Early Evening </option>
            </select>
+          </section>
+          <div class="submit-info">
           <label for="review">Reason for Appointment & Additional Comments:</label>
           <textarea id="review" name="review" rows="4" cols="50"> </textarea>
-          <button id="appointmentSubmit" type="submit">appointment Submit</button>
-          <button id="resetbtn" type="reset" onclick="resetForm()">Reset</button>
+          <div class="btns">
+            <button id="appointmentSubmit" type="submit"> Submit</button>
+          </div>
+         
+          
+        </div>
         </form>
       </fieldset>
-
-      <div>
-        <p id="appointmentForm">
-
-        </p>
+    
+      <div id="oppontment">
+        
       </div>
 
     </section>
-
+  
   </main>
   <hr>
   <footer>all rights reserved <br> PS-providores ©</footer>
