@@ -1,0 +1,107 @@
+
+#logo{
+  width: 100px;
+}
+header{
+ align-items: center;
+  height: 100px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+#HLogo{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+#HLogo div p:nth-child(1){
+  font-family: 'Indie Flower', cursive;
+  color: orange;
+  font-size: 50px;
+}
+#HLogo div p:nth-child(2){
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+#nav a{
+  padding: 20px;
+  text-decoration: none;
+  color: orange;
+  font-size: 30px;
+  margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.4s;
+}
+#nav a:hover{
+  color: white;
+  background-color: orange;
+}
+
+hr{
+  background-color: orange;
+  height: 5px;
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+}
+#hero{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+#hero img{
+width: 100%;
+}
+#heroDiv{
+  position: absolute;
+  top: 75%;
+  left: 6%;
+  color: orange;
+  -webkit-text-stroke: 1px black;
+}
+#heroDiv p:nth-child(1) {
+  font-family: 'Cherry Swash', cursive;
+  font-size: 60px;
+
+}
+
+#heroDiv p:nth-child(2){
+  font-family: 'Cherry Swash', cursive;
+  font-size: 35px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#links{
+  margin-top: 50px;
+  gap: 50px;
+ 
+}
+#links div{
+  width: 90%;
+  margin-left: 5%;
+}
+#link1{
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 100px;
+}
+#img1{
+  float: left;
+}
+#a1{
+  float: right;
+}
+footer{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: orange;
+}
