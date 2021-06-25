@@ -1,13 +1,11 @@
-# pet care center:
+# pet care center
 
-### User Stores:
+## User Stores
 
 1. As a user I would like to book an appointment with a veterinarian.
 2. As a user I would like to see the sections of the animals offered for adoption and know their age, where they live and a phone number to contact the owner
 3. As a user I would like to enter information about my animal and put it up for adoption
 4. As a user I want to buy products and collect them in a card
-
-
 
 ### What is the vision for this product?
 
@@ -20,7 +18,6 @@ The product enables you to take a doctor to treat your pet, if you want some pro
 ### Why should we care about your product?
 
 If you love pets, you should take care.. We have combined 3 main points to take care of them
-
 
 ### What will your product do?
 
