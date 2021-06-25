@@ -153,7 +153,7 @@ function render(divSet, typeSet) {
 
     }
   }
-}
+
 
 //
 function renderAll() {
