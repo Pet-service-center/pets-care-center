@@ -6,7 +6,6 @@
 
 body{
   margin-top: 20px;
-  
 }
 #logo{
   width: 70px;
@@ -38,8 +37,7 @@ header{
   font-size: 15px;
 }
 #nav a{
-  padding-top: 10px;
-  padding-right: 100px;
+  padding: 10px;
   text-decoration: none;
   color: orange;
   font-size: 20px;
@@ -57,7 +55,7 @@ hr{
   background-color: orange;
   height: 1px;
   border: none;
-  width: 85%;
+  width: 90%;
   margin-left: 5%;
   margin-top: 20px;
 }
@@ -163,7 +161,15 @@ textarea {
   margin: auto;
 }
 
-
+#oppontment p{
+margin-top: 50px;
+text-align: center;
+font-size: 25px;
+padding: 20px;
+background-color: orange;
+width: 72%;
+margin-left: 12.5%;
+}
 
 
 

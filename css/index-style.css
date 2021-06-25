@@ -2,7 +2,6 @@
   padding:0;
   margin: 0;
   
-  
 }
 
 body{
@@ -60,7 +59,9 @@ hr{
   margin-left: 5%;
   margin-top: 20px;
 }
-
+#hero{
+  margin-top: 50px;
+}
 
 .slider{
   overflow: hidden;
@@ -154,9 +155,9 @@ hr{
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
-  gap: 50px;
   height: 500px;
- 
+  width: 90%;
+  margin-left: 5%;
 }
 
 .links button{
