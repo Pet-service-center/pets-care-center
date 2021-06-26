@@ -93,8 +93,8 @@ div div div {
     backdrop-filter: blur(20px);
     transform: perspective(500px);
     transform-style: preserve-3d;
-}
-
+    
+} 
 
 div div div p {
     color: grey;
@@ -102,10 +102,24 @@ div div div p {
 }
 
 div div div img{
-    width: 100%;
+    width: 93%;
     height: 300px;
     object-fit: cover;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    margin: auto;
 }
+
+div div div img:hover{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transform: scale(1.15);
+  transition: 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+
 div div div button{
     border: none;
     outline: 0;
