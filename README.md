@@ -1,6 +1,5 @@
 # pets-care-center
 
-
 Team PS-providers
 
 members:
@@ -23,15 +22,12 @@ project name: pet service  center .
 
 a website to provide all the services your pet needs.
 
-
 ## wire frames
 
-![](New Wireframe 1.png)
+![wireframe1](wireframe-homepage.png)
 
-![]()
+![wireframe2](wireframe-petclinic.png)
 
-![]()
+![wireframe3](wireframe-adoption.png)
 
-![]()
-
-![]()
+![wireframe4](wireframe-proudcts.png)
