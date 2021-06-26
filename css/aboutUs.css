@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+    border-radius: 130px;
+    position: absolute;
+    top: 150px;
+    left:0;
+    border: 2px solid orange;
+    box-shadow:  -3px -3px 2px rgba(255, 255, 255, 0.3),
+                  5px 5px 5px rgba(0, 0, 0, 0.2)  ,
+                  15px 15px 15px rgba(0, 0, 0, 0.2);                                     ;
+}
+
+.team1{
+    z-index: 1;
+   margin-top: 10px;
+   margin-left: 30px;
+}
+
+.team2{
+    z-index: 2;
+    margin-top: 85px;
+    margin-left: 160px;
+}
+
+.team3{
+    z-index: 3;
+    margin-top: 210px;
+    margin-left: 70px;
+}
+
+.team4{
+    z-index: 3;
+    margin-top: 330px;
+    margin-left: 180px;
+}
+
+.teamName{
+   position: absolute;
+   left: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: orange;
+    font-family: 'Dela Gothic One', cursive;
+
+}
+
+.teaminfo{
+    width: 600px;
+    height: 635px;
+    background-color: orange;
+    position: relative;
+    top:16px;
+    left: 0;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.teaminfo h4{
+    padding-top: 20px;
+    font-size: 30px;
+    color:gray;
+    font-weight: bold;
+}
+
+.teaminfo p{
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.3;
+}
+
+.paragraph{
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.contact{
+    width: 420px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color:#fff;
+    color: orange;
+}
+
+.contact h3{
+    padding: 20px 0;
+    font-size: 23px;
+    color: gray;
+    font-weight: bold;
+}
+
+.contact ul{
+    text-align: justify;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.teamMembers{
+    width: 310px;
+    height: 270px;
+    background-color: orange;
+    position: absolute;
+    top:130px;
+    left: 74%;
+    color: #fff;
+    text-align: center;
+    margin: 5px 10px;
+    border-radius: 20px;
+    
+    
+    
+}
+
+.teamMembers h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color:gray;
+    font-weight: bold;
+}
+
+ ul li {
+    list-style:inside;
+    padding: 5px;
+    text-align: justify;
+    margin: 0 15px;
+    font-size: 18px;
+
+}
