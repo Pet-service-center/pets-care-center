@@ -8,7 +8,7 @@ const foodImg = [
   ['Wild Bird Food', 'images/food/WildBirdFood.jpg', '18$'],
   ['rabbit food', './images/food/rabbitfoods.jpg', '24$'],
   ['water continer', './images/food/waterdishes.jpg', '25$'],
-  ['Pets Dishes', './images/food/petsdish.jpg', '18$'],
+  
   [' food Dish', './images/food/foodDishes.jpg', '15$'],
   ['hamster food', './images/food/hamsterFood.jpg', '17$'],
   ['cat dish food ', './images/food/images.jpg', '40$'],
@@ -108,6 +108,10 @@ function render() {
     input.setAttribute('placeholder', 'Quantity');
     input.setAttribute('min', 0);
     div.appendChild(input);
+    let price=document.createElement('h3')
+    div.appendChild(price);
+    price.textContent= `price  ${Product.all[i].price}  `;
+
     let btn = document.createElement('BUTTON');
     div.appendChild(btn);
     btn.innerHTML = 'Add to Cart';
