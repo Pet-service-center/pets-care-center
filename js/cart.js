@@ -28,7 +28,7 @@ function clearCart() {
 function showCart() {
   let imgsrc;
   // TODO: Find the table body
-  table.innerHTML = `<thead><tr><th>Remove</th><th>Quantity</th><th>Item</th></tr></thead>
+  table.innerHTML = `<thead><tr><th>Remove</th><th>Quantity</th><th>Item</th><th>price</th></tr></thead>
                     <tbody></tbody><tfoot></tfoot></table>`
   let tableBody = document.querySelector('tbody');
 // TODO: Iterate over the items in the cart
