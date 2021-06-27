@@ -89,11 +89,13 @@ function generate(array) {
 
 let section = document.getElementById('ProductsImages');
 
+
 function render() {
   for (let i = 0; i < Product.all.length; i++) {
     let div = document.createElement('div');
     div.setAttribute('id',`no.${i}`);
     section.appendChild(div);
+    div.className="card"
     let infoPage= document.createElement('a');
     infoPage.setAttribute('href','./productInfo.html');
     div.appendChild(infoPage);
