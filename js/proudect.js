@@ -10,20 +10,20 @@ function change(n) {
   panels[n - 1].classList.add('active')
 }*/
 
-const foodImg = ['./images/food/birdsfood.jpg','./images/food/catfood.jpg','./images/food/download.jpg','./images/food/Food-And-Water-Dispenser.jpg','./images/food/foodDishes.jpg','./images/food/hamsterFood.jpg','./images/food/hamsterfoods1.jpg','./images/food/images.jpg','./images/food/petsdish.jpg','./images/food/rabbitfood.jpg','./images/food/waterdishes.jpg','./images/food/WildBirdFood.jpg'];
-const houseImg = ['./images/house/birdhouse.jpg','./images/house/birdhouse2.jpg','./images/house/birdhouse4.jpg','./images/house/catbed.jpg','./images/house/catdoublebed.jpg','./images/house/cathouse.jpg','./images/house/catWC.jpg','./images/house/dogoutsidehouse.jpg','./images/house/dogwoodhouse.jpg','./images/house/download.jpg','./images/food/hamsterbed1.jpg','./images/food/hamsterBeds.jpg','./images/house/hamsterhouse.jpg','./images/house/hamsterhouse2.jpg','./images/house/hamsterhouse3.jpg','./images/house/hamsterhouse4.jpg','./images/house/Parrot-House-for-2-2Rabbit-1.jpg','./images/house/petsBed.jpg','./images/house/woodbirdhouse.jpg','./images/house/rabbithouse2.jpg',];
-const clothesimg = ['./images/clothes/catpajama.jpg','./images/clothes/catpajamas.jpg','./images/clothes/catpajamas#1.jpg','./images/clothes/catWoolDress.jpg','./images/clothes/costumes-hamsters.jpg','./images/clothes/dog-clothes-waterproof.jpg','./images/clothes/DogDress.jpg','./images/clothes/dogpajamas.jpg','./images/clothes/hamsterpajama.jpg','./images/clothes/Heartgown Dog Clothes Soft.jpg','./images/food/Parrot-Suit-Blazers.jpg','./images/food/parrot.jpg','./images/clothes/parrot#1.jpg','./images/clothes/Pet-Cat-Dress.jpg']
+//const foodImg = ['./images/food/birdsfood.jpg','./images/food/catfood.jpg','./images/food/download.jpg','./images/food/Food-And-Water-Dispenser.jpg','./images/food/foodDishes.jpg','./images/food/hamsterFood.jpg','./images/food/hamsterfoods1.jpg','./images/food/images.jpg','./images/food/petsdish.jpg','./images/food/rabbitfood.jpg','./images/food/waterdishes.jpg','./images/food/WildBirdFood.jpg'];
+//const houseImg = ['./images/house/birdhouse.jpg','./images/house/birdhouse2.jpg','./images/house/birdhouse4.jpg','./images/house/catbed.jpg','./images/house/catdoublebed.jpg','./images/house/cathouse.jpg','./images/house/catWC.jpg','./images/house/dogoutsidehouse.jpg','./images/house/dogwoodhouse.jpg','./images/house/download.jpg','./images/food/hamsterbed1.jpg','./images/food/hamsterBeds.jpg','./images/house/hamsterhouse.jpg','./images/house/hamsterhouse2.jpg','./images/house/hamsterhouse3.jpg','./images/house/hamsterhouse4.jpg','./images/house/Parrot-House-for-2-2Rabbit-1.jpg','./images/house/petsBed.jpg','./images/house/woodbirdhouse.jpg','./images/house/rabbithouse2.jpg',];
+//const clothesimg = ['./images/clothes/catpajama.jpg','./images/clothes/catpajamas.jpg','./images/clothes/catpajamas#1.jpg','./images/clothes/catWoolDress.jpg','./images/clothes/costumes-hamsters.jpg','./images/clothes/dog-clothes-waterproof.jpg','./images/clothes/DogDress.jpg','./images/clothes/dogpajamas.jpg','./images/clothes/hamsterpajama.jpg','./images/clothes/Heartgown Dog Clothes Soft.jpg','./images/food/Parrot-Suit-Blazers.jpg','./images/food/parrot.jpg','./images/clothes/parrot#1.jpg','./images/clothes/Pet-Cat-Dress.jpg']
 
 
 const foodImg = [
   ['Keytee Parrarrot food', './images/food/birdsfood.jpg', '15$'],
   ['Whiskas Cat Food', './images/food/catfood.jpg', '12$'],
   ['pedigree Dog Food', './images/food/download.jpg', '30$'],
-  ['Food-And-Water-Dispenser', './images/food/Food-And-Water-Dispenser.jpg', '25$'],
+  ['Food-And-Water-Dispenser', './images/food/allBirdsfood.jpg', '25$'],
   ['Wild Bird Food', 'images/food/WildBirdFood.jpg', '18$'],
-  ['rabbit food', './images/food/rabbitfood.jpg', '24$'],
+  ['rabbit food', './images/food/rabbitfoods.jpg', '24$'],
   ['water continer', './images/food/waterdishes.jpg', '25$'],
-  ['Pets Dishes', './images/food/./images/food/petsdish.jpg', '18$'],
+  ['Pets Dishes', './images/food/petsdish.jpg', '18$'],
   [' food Dish', './images/food/foodDishes.jpg', '15$'],
   ['hamster food', './images/food/hamsterFood.jpg', '17$'],
   ['cat dish food ', './images/food/images.jpg', '40$'],
@@ -51,11 +51,11 @@ function generate(array) {
   }
 
 
+}
 
+let section = document.getElementById('ProductsImages');
 
-  let section = document.getElementById('ProductsImages');
-
-  function render() {
+function render() {
     for (let i = 0; i < Product.all.length; i++) {
       let div = document.createElement('div');
       section.appendChild(div);
@@ -74,17 +74,19 @@ function generate(array) {
     }
 
 
-  }
-  
-  generate(foodImg);
+ }
+
+generate(foodImg);
   console.log(Product.all);
   render();
 
-  function viewFood() {
+  
+function viewFood() {
     generate(foodImg);
     //console.log(Product.all);
     render();
   }
+  viewFood();
 // generatefood();
 
 // let foodhandle(event){
