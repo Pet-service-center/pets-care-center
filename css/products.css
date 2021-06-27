@@ -47,7 +47,7 @@ nav a{
     transition: all 550ms;
 }
 #product{
-    color: #d8c0c0;
+    color: #e6a9a9;
     font-family: 'RocknRoll One', sans-serif;
 font-size: 65px;
 font-weight: bold;
@@ -61,10 +61,10 @@ text-align: center;
 }
 .producttype a {
     font-size: 20px;
-    border: rgb(217, 229, 241);
+    border: rgb(58, 111, 163);
     border-style: solid;
     border-radius: 50%;
-    color: seashell;
+    color: rgb(235, 98, 98);
 }
 
 
@@ -104,4 +104,12 @@ div img {
   -webkit-animation: beat 1s ease infinite alternate;
   animation: beat 1s ease infinite alternate;
   
+  }
+  
+  main div {
+    display: none;
+    padding: 20px;
+  }
+  .active {
+    display: block;
   }
