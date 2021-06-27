@@ -5,7 +5,7 @@
 1. As a user I would like to book an appointment with a veterinarian.
 2. As a user I would like to see the sections of the animals offered for adoption and know their age, where they live and a phone number to contact the owner
 3. As a user I would like to enter information about my animal and put it up for adoption
-4. As a user I want to buy products and collect them in a card
+4. As a user I want to buy products and collect them in a cart
 5. As a user i would like to easily navigate between pages and in the same page
 ### What is the vision for this product?
 
