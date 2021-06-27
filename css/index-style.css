@@ -175,6 +175,10 @@ hr {
   width: 350px;
   height: 200px;
 }
+.links a{
+  width: 350px;
+  height: 200px;
+}
 
 .pit-services,
 .pit-shop,
@@ -215,12 +219,79 @@ hr {
   box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
-
 footer {
+  width: 90%;
   text-align: center;
   margin-top: 30px;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
-  color: orange;
+  margin-left: 5%;
+  background-color: orange;
+  color: white;
+}
+footer h6{
+  color: gray;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.upSection {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 30px;
+}
+.flexDiv:first-child {
+  width: 300px;
+  align-content: left;
+  font-size: large;
+}
+/* #footerLogo {
+  width: 100px;
+  height: 100px;
+} */
+.usefulLinks a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: white;
+
+}
+.fastLinks a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: white;
+}
+#navIcons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#navIcons a {
+  width: 25px;
+  text-decoration: none;
+}
+#navIcons img {
+ width: 25px;
+}
+.map iframe {
+  width: 170px;
+  height: 170px;
+  
+}
+footer hr {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+}
+.downSection {
+  margin-top: 20px;
+}
+.downSection p {
+  text-align: center;
 }
