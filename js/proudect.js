@@ -44,8 +44,7 @@ const clothesImg = [
   ['parrot dress', './images/clothes/parrot.jpg', '40$'],
   ['parrot Dress', './images/clothes/parrotDress.jpg', '18$']
 ];
-//const houseImg = ['./images/house/birdhouse.jpg','./images/house/birdhouse2.jpg','./images/house/birdhouse4.jpg','./images/house/catbed.jpg','./images/house/catdoublebed.jpg','./images/house/cathouse.jpg','./images/house/catWC.jpg','./images/house/dogoutsidehouse.jpg','./images/house/dogwoodhouse.jpg','./images/house/download.jpg','./images/food/hamsterbed1.jpg','./images/food/hamsterBeds.jpg','./images/house/hamsterhouse.jpg','./images/house/hamsterhouse2.jpg','./images/house/hamsterhouse3.jpg','./images/house/hamsterhouse4.jpg','./images/house/Parrot-House-for-2-2Rabbit-1.jpg','./images/house/petsBed.jpg','./images/house/woodbirdhouse.jpg','./images/house/rabbithouse2.jpg',];
-//const clothesimg = ['./images/clothes/catpajama.jpg','./images/clothes/catpajamas.jpg','./images/clothes/catpajamas#1.jpg','./images/clothes/catWoolDress.jpg','./images/clothes/costumes-hamsters.jpg','./images/clothes/dog-clothes-waterproof.jpg','./images/clothes/DogDress.jpg','./images/clothes/dogpajamas.jpg','./images/clothes/hamsterpajama.jpg','./images/clothes/Heartgown Dog Clothes Soft.jpg','./images/food/Parrot-Suit-Blazers.jpg','./images/food/parrot.jpg','./images/clothes/parrot#1.jpg','./images/clothes/parrotDress.jpg','./images/clothes/Pet-Cat-Dress.jpg','./images/clothes/petsclothes.jpg','./images/clothes/rabbit.jpg','./images/clothes/rabbitdress.jpg'];
+
 const houseImg = [
   ['Bird house', './images/house/birdhouse.jpg', '60$'],
   ['Bird house', './images/house/birdhouse2.jpg', '45$'],
@@ -53,7 +52,7 @@ const houseImg = [
   ['Cat bed', './images/house/catbed.jpg', '40$'],
   ['Cat Double bed', './images/house/catdoublebed.jpg', '18$'],
   ['Cat house', './images/house/cathouse.jpg', '27$'],
-  ['hamster bed', './images/house/hamsterbed.jpg', '25$'],
+  ['hamster bed', './images/house/hamsterbed1.jpg', '25$'],
   ['hamster house', './images/house/hamsterhouse2.jpg', '30$'],
   [' Dog outside house', './images/house/dogoutsidehouse.jpg', '135$'],
   ['rabbit house', './images/house/rabbithouse.jpg', '19$'],
@@ -61,18 +60,18 @@ const houseImg = [
   ['Dog wood house', './images/house/dogwoodhouse.jpg', '78$']
 ];
 const toolImg = [
-  ['Bird house', './images/tool/birdtool.jpg', '60$'],
-  ['Bird tool', './images/tool/birdtool2.jpg', '45$'],
-  ['Bird tool', './images/tool/birdtool4.jpg', '30$'],
-  ['Cat bed', './images/tool/catbed.jpg', '40$'],
-  ['Cat Double bed', './images/tool/catdoublebed.jpg', '18$'],
-  ['Cat tool', './images/tool/cattool.jpg', '27$'],
-  ['hamster bed', './images/tool/hamsterbed.jpg', '25$'],
-  ['hamster tool', './images/tool/hamstertool2.jpg', '30$'],
-  [' Dog outside tool', './images/tool/dogoutsidetool.jpg', '135$'],
-  ['rabbit tool', './images/tool/rabbittool.jpg', '19$'],
-  ['Wood bird tool', './images/tool/woodbirdtool.jpg', '40$'],
-  ['Dog wood tool', './images/tool/dogwoodtool.jpg', '78$']
+  ['cat-toilet', './images/cat-toilet.jpg', '60$'],
+  ['cat bag', './images/catbag.jpg', '45$'],
+  ['cat shower', './images/catshower.jpg', '30$'],
+  ['cat toys', './images/cattoys.jpg', '40$'],
+  ['Dog shower tools', './images/dogshowertools.jpg', '18$'],
+  ['Dog toys', './images/dogtoys.jpg', '27$'],
+  ['Dog travel bag', './images/dogtravelbag.jpg', '25$'],
+  ['Rabbit & hamster travel bag', './images/Rabbit&hamsterTravelBag.jpg', '30$'],
+  [' Shower tools', './images/Shower-Dog.jpg', '135$'],
+  ['pets staris toy', './images/petstairs.jpg', '19$'],
+  ['bag for small dog', './images/dogbag.jpg', '40$'],
+  ['Dog toys', './images/s.jpg', '78$']
 ];
 const Product = function (name, src, price) {
   this.name = name;
@@ -86,7 +85,7 @@ Product.all = [];
 
 function generate(array) {
   Product.all = [];
-  section.innerHTML='';
+  section.innerHTML = '';
   for (let i = 0; i < array.length; i++) {
     new Product(array[i][0], array[i][1], array[i][2]);
   }
@@ -97,35 +96,36 @@ function generate(array) {
 let section = document.getElementById('ProductsImages');
 
 function render() {
-    for (let i = 0; i < Product.all.length; i++) {
-      let div = document.createElement('div');
-      section.appendChild(div);
-      let img = document.createElement('img');
-            img.src = Product.all[i].src;
-            div.appendChild(img);
-      let h3 = document.createElement('h3');
-      h3.textContent = Product.all[i].name;
-      div.appendChild(h3);
-      let input = document.createElement("INPUT");
-      input.setAttribute("type", "number");
-      input.setAttribute("placeholder", "Quantity");
-      div.appendChild(input);
-      var btn = document.createElement("BUTTON");   // Create a <button> element
-      div.appendChild(btn);
-      btn.innerHTML = 'Add to Cart';
-    }
+  for (let i = 0; i < Product.all.length; i++) {
+    let div = document.createElement('div');
+    section.appendChild(div);
+    let img = document.createElement('img');
+    img.src = Product.all[i].src;
+    div.appendChild(img);
+    let h3 = document.createElement('h3');
+    h3.textContent = Product.all[i].name;
+    div.appendChild(h3);
+    
+    let input = document.createElement("INPUT");
+    input.setAttribute("type", "number");
+    input.setAttribute("placeholder", "Quantity");
+    div.appendChild(input);
+    var btn = document.createElement("BUTTON");   // Create a <button> element
+    div.appendChild(btn);
+    btn.innerHTML = 'Add to Cart';
+  }
 
 
 };
 
 
- 
+
 generate(foodImg);
 
 function viewFood() {
-    generate(foodImg);
-    //console.log(Product.all);
-    render();
+  generate(foodImg);
+  //console.log(Product.all);
+  render();
 };
 
 generate(clothesImg);
@@ -142,7 +142,13 @@ function viewhouse() {
   render();
 }
 
+generate(toolImg);
 
+function viewtools() {
+  generate(toolImg);
+  //console.log(Product.all);
+  render();
+};
 
 
 
