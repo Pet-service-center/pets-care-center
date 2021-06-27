@@ -1,42 +1,45 @@
-*{
-  padding:0;
+* {
+  padding: 0;
   margin: 0;
-  
 }
 
-body{
+body {
   margin-top: 20px;
 }
-#logo{
+
+#logo {
   width: 70px;
-  
 }
-header{
- align-items: center;
+
+header {
+  align-items: center;
   height: 100px;
   width: 90%;
   margin-left: 5%;
   display: flex;
   justify-content: space-between;
 }
-#HLogo{
+
+#HLogo {
   gap: 10px;
   display: flex;
   align-items: center;
 }
-#HLogo div p:nth-child(1){
+
+#HLogo div p:nth-child(1) {
   font-family: 'Lobster', cursive;
   color: orange;
   font-size: 55px;
-  
 }
-#HLogo div p:nth-child(2){
+
+#HLogo div p:nth-child(2) {
   color: orange;
   font-weight: bold;
   margin-top: 5px;
   font-size: 15px;
 }
-#nav a{
+
+#nav a {
   padding: 10px;
   text-decoration: none;
   color: orange;
@@ -45,13 +48,14 @@ header{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: 0.4s;
 }
-#nav a:hover{
+
+#nav a:hover {
   color: white;
   background-color: orange;
-  border-radius:110px ;
+  border-radius: 110px;
 }
 
-hr{
+hr {
   background-color: orange;
   height: 1px;
   border: none;
@@ -60,55 +64,42 @@ hr{
   margin-top: 20px;
 }
 
-
-.content{
+.content {
   margin-left: 5%;
   margin-right: 5%;
   padding: 50px 70px;
   border-radius: 110px;
   margin-top: 10px;
   color: #fff;
-  
-  
 }
 
-
-
-.Appointment{
-  
+.Appointment {
   font-size: 25px;
   padding: 30px 100px;
   color: #ffb833;
   margin-bottom: 10px;
   line-height: 1.5;
-  
 }
 
-fieldset{
-  padding-top:50px;
- background-color:#ffb833;
- width: 75%;
- margin: auto;
- 
-  
+fieldset {
+  padding-top: 50px;
+  background-color: #ffb833;
+  width: 75%;
+  margin: auto;
 }
 
 form {
-
-  
   margin-top: 0px;
-  display:flex;
-  justify-content:  space-around;
-  
+  display: flex;
+  justify-content: space-around;
 }
 
-form label{
+form label {
   display: block;
   padding-bottom: 5px;
-  
 }
 
-form input{
+form input {
   margin-bottom: 25px;
   width: 200px;
   height: 30px;
@@ -120,93 +111,72 @@ form input{
   margin-bottom: 30px;
 }
 
-#time{
+#time {
   width: 200px;
   height: 30px;
   margin-bottom: 30px;
 }
 
-.submit-info{
+.submit-info {
   padding-top: 30px;
   display: grid;
   margin: auto;
   gap: 10px;
-  background-color:#737373;
+  background-color: #737373;
   width: 75%;
-  
 }
 
-.submit-info label{
+.submit-info label {
   margin: auto;
 }
 
-
-.btns{
+.btns {
   padding-top: 10px;
   margin: auto;
 }
 
-.btns button{
+.btns button {
   margin: 10px 50px;
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  color:orange;
+  color: orange;
   border: 2px solid orange;
   font-weight: bold;
-  font-size:16px;
+  font-size: 16px;
 }
 
 textarea {
   margin: auto;
 }
 
-#oppontment p{
-margin-top: 50px;
-text-align: center;
-font-size: 25px;
-padding: 20px;
-background-color: orange;
-width: 72%;
-margin-left: 12.5%;
+#informationSaved {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  background-color: white;
+  width: 72%;
+  margin-left: 12.5%;
+  color: black;
 }
 
+#oppontment {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  background-color: white;
+  width: 72%;
+  margin-left: 12.5%;
+  color: black
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
+footer {
   text-align: center;
   margin-top: 30px;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
   color: orange;
-  
 }
