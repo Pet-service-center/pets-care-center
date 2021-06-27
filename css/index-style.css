@@ -62,7 +62,7 @@ header {
 }
 
 #nav a {
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
   color: orange;
   font-size: 20px;
@@ -179,19 +179,21 @@ hr {
 .pit-services,
 .pit-shop,
 .pit-adapter {
+  margin-top: 50px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/best-pets-for-kids-1-1-1024x683.jpeg);
   background-size: cover;
-  box-shadow: 0 40px 70px rgba(0, 0, 0, .2);
+  box-shadow: 0 0px 60px orange;
   border-radius: 110px;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: white;
   border: 3px solid orange;
+  transition: 00.4s;
 }
 
 .pit-services:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
 
@@ -205,12 +207,12 @@ hr {
 }
 
 .pit-shop:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
 
 .pit-adapter:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
 
