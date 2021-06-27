@@ -99,6 +99,7 @@ function render() {
     let input = document.createElement("INPUT");
     input.setAttribute("type", "number");
     input.setAttribute("placeholder", "Quantity");
+    input.setAttribute('min',0);
     div.appendChild(input);
     var btn = document.createElement("BUTTON");   // Create a <button> element
     div.appendChild(btn);
