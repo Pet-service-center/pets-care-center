@@ -183,6 +183,8 @@ function cleadDiv() {
 
 // add event
 mainDiv.addEventListener('click', removeAnimals);
+let surediv=document.getElementById('sure');
+
 
 function removeAnimals(event) {
 
@@ -191,6 +193,7 @@ function removeAnimals(event) {
     for (let i = 0; i < Animals.all.length; i++) {
       // get obj using the ID
       if (Animals.all[i].id == event.target.id) {
+        surediv.style.display='block';
         Animals.all.splice(i, 1);
         // re store in local
         setData();
@@ -198,15 +201,12 @@ function removeAnimals(event) {
         cleadDiv();
         // re-drow the html page with new edit in local
         renderAll();
-
-
       }
 
     }
 
   }
 }
-
 
 
 
@@ -250,3 +250,6 @@ function formSubmission(event) {
 
 form.addEventListener('submit', formSubmission);
 
+function suremsg(){
+  document.getElementById('sure').style.display='block';
+}
