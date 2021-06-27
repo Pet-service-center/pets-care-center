@@ -70,7 +70,9 @@ const toolImg = [
   ['bag for small dog', './images/dogbag.jpg', '40$'],
   ['Dog toys', './images/s.jpg', '78$'],
 ];
+let id =0;
 const Product = function (name, src, price) {
+  this.id=0;
   this.name = name;
   this.src = src;
   this.price = price;
@@ -83,6 +85,7 @@ function generate(array) {
   Product.all = [];
   section.innerHTML = '';
   for (let i = 0; i < array.length; i++) {
+    id++;
     new Product(array[i][0], array[i][1], array[i][2]);
   }
 }
@@ -117,8 +120,29 @@ function render() {
     let btn = document.createElement('BUTTON');
     div.appendChild(btn);
     btn.innerHTML = 'Add to Cart';
+    btn.className="allcart"
+    btn.setAttribute('id', Product.all[i].id)
+    btn.addEventListener('click', addItem);
+    console.log(btn.className);
   }
+ 
 }
+
+  
+  document.addEventListener('click', function(e){
+    if(e.target.tagName=="BUTTON"){
+    //  alert('BUTTON CLICKED');
+    }
+  })
+// let btn = document.getElementById()
+
+// btn.addEventListener('click', addItem);
+
+function addItem (){
+  console.log('111');
+  window.location='cart.html';
+}
+
 function viewFood() {
   generate(foodImg);
   render();
