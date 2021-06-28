@@ -124,7 +124,6 @@ function render() {
 
     div.className = 'card';
 
-    section.className = 'card';
 
 
     let infoPage = document.createElement('a');
@@ -159,13 +158,7 @@ function render() {
     input.setAttribute('min', 0);
     div.appendChild(input);
 
-
-
-
-
-
-
-    input.className='input';
+    input.className='Quantity';
 
     let price = document.createElement('h3');
 
