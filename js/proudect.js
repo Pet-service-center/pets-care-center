@@ -62,15 +62,31 @@ const toolImg = [
 ];
 
 
+// return random number
+function getRandomInteger(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+let idArray=[];
+function getId() {
+  let id;
+  for (let i = 0; i < idArray.length; i++) {
+    do {
+      id = getRandomInteger(0, 1000);
+
+    } while (id === idArray[i]);
+  }
+  idArray.push(id);
+  return id;
+}
+
 
 
 
 const Product = function (name, src, price, description) {
-
-let id =0;
-const Product = function (name, src, price) {
-  this.id=0;
-
+this.id = getId();
   this.name = name;
   this.src = src;
   this.price = price;
@@ -85,11 +101,8 @@ function generate(array) {
   section.innerHTML = '';
   for (let i = 0; i < array.length; i++) {
 
+
     new Product(array[i][0], array[i][1], array[i][2], array[i][3]);
-
-    id++;
-    new Product(array[i][0], array[i][1], array[i][2]);
-
   }
 }
 
@@ -140,14 +153,9 @@ function render() {
     div.appendChild(btn);
     btn.innerHTML = 'Add to Cart';
 
-    btn.className = "btn";
-
-    btn.className="allcart"
-    btn.setAttribute('id', Product.all[i].id)
-    btn.addEventListener('click', addItem);
-    console.log(btn.className);
-
-  }
+    btn.setAttribute('id', Product.all[i].id);
+   
+ }
  
 }
 
@@ -193,31 +201,26 @@ function viewtools() {
 viewFood();
 
 
+let cartArr = [];
 
-/*
+section.addEventListener('click', addToCard);
 
-let sale = document.createElement('span');
-    img.appendChild(sale);
-    sale.textContent='30% Sale'
-    sale.className='sale';
+function addToCard(event) {
 
-let div1 = document.createElement('div');
-    section.appendChild(div1);
-    div1.className = "flip-card"
+  // add the the event for button only
+  if (event.target.textContent == 'Add to Cart') {
+    for (let i = 0; i <Product.all.length; i++) {
+      // get obj using the ID
+      if (Product.all[i].id == event.target.id) {
+      cartArr.push([Product.all[i].name , Product.all[i].price]);
+      localStorage.setItem('cartItem',cartArr);
+      console.log(cartArr);
+      //window.location.href='cart.html';
 
-    let div2 = document.createElement('div');
-    div1.appendChild(div2);
-    div2.className = "flip-card-inner";
+      }
 
-    let div3 = document.createElement('div');
-    div2.appendChild(div3);
-    div3.className = "flip-card-back";
+    }
 
-    let h2 = document.createElement('h2');
-    div3.appendChild(h2);
-    h2.textContent = Product.all[i].name;
-
-
-    let p = document.createElement('p');
-    div3.appendChild(p);
-    p.textContent = Product.all[i].description;*/
+  }
+}
+console.log(cartArr);
