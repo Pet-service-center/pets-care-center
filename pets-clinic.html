@@ -56,7 +56,7 @@
       </section>
       <section class="appointmentForm">
         <fieldset class="appointmenFieldSet">
-          <form id="appointform" action="">
+          <form id="appointform">
             <div class="left-side">
               <label for="fname">Full name:</label>
               <input type="text" id="fname" name="fname" placeholder="John alsidi" required>
@@ -98,10 +98,25 @@
       </div>
       </form>
       </fieldset>
-      <div>
+      <!-- <div>
         <p id='informationSaved'></p>
-      </div>
 
+      </div> -->
+      <div>
+        <table id='informationSavedTable'>
+
+          <tr>
+            <th>fullName</th>
+            <th>email</th>
+            <th>phoneNumber</th>
+            <th>pet Type</th>
+            <th>AppointmentDate</th>
+            <th>dayTime</th>
+            <th>Additional Comments</th>
+          </tr>
+
+        </table>
+      </div>
       <div>
         <p id="oppontment"></p>
       </div>
