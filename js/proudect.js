@@ -159,20 +159,29 @@ function render() {
 
 }
 
+<<<<<<< HEAD
 
 document.addEventListener('click', function(e){
   if(e.target.tagName=='BUTTON'){
     //  alert('BUTTON CLICKED');
   }
 });
+=======
+  
+  // document.addEventListener('click', function(e){
+  //   if(e.target.tagName=="BUTTON"){
+  //   //  alert('BUTTON CLICKED');
+  //   }
+  // })
+>>>>>>> 4229babf06d244f9a770bfb6e85e3a4406af2100
 // let btn = document.getElementById()
 
 // btn.addEventListener('click', addItem);
 
-function addItem (){
-  console.log('111');
-  window.location='cart.html';
-}
+// function addItem (){
+//   console.log('111');
+//   window.location='cart.html';
+// }
 
 function viewFood() {
   generate(foodImg);
@@ -202,6 +211,7 @@ viewFood();
 
 
 let cartArr = [];
+let itemInfo=[];
 
 section.addEventListener('click', addToCard);
 
@@ -219,5 +229,18 @@ function addToCard(event) {
       }
     }
   }
+  if(event.target.infoPage){
+itemInfo
+  }
 }
 console.log(cartArr);
+
+function getData() {
+  let data = JSON.parse(localStorage.getItem('cartItem'));
+  if (data) {
+   cartArr= data;
+
+  }
+}
+
+getData();
