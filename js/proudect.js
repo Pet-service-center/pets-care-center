@@ -117,7 +117,7 @@ function render() {
 
 
     let div = document.createElement('div');
-    div.setAttribute('id', `no.{i}`);
+    div.setAttribute('id', 'no.{i}');
     section.appendChild(div);
     section.className = 'card';
 
@@ -143,7 +143,7 @@ function render() {
     div.appendChild(input);
     let price = document.createElement('h3');
     div.appendChild(price);
-    price.textContent = `price  {Product.all[i].price}  `;
+    price.textContent = 'price  {Product.all[i].price}  ';
     price.id='price';
 
 
@@ -159,21 +159,12 @@ function render() {
 
 }
 
-<<<<<<< HEAD
 
-document.addEventListener('click', function(e){
-  if(e.target.tagName=='BUTTON'){
-    //  alert('BUTTON CLICKED');
-  }
-});
-=======
-  
-  // document.addEventListener('click', function(e){
-  //   if(e.target.tagName=="BUTTON"){
-  //   //  alert('BUTTON CLICKED');
-  //   }
-  // })
->>>>>>> 4229babf06d244f9a770bfb6e85e3a4406af2100
+// document.addEventListener('click', function(e){
+//   if(e.target.tagName=="BUTTON"){
+//   //  alert('BUTTON CLICKED');
+//   }
+// })
 // let btn = document.getElementById()
 
 // btn.addEventListener('click', addItem);
@@ -230,7 +221,6 @@ function addToCard(event) {
     }
   }
   if(event.target.infoPage){
-itemInfo
   }
 }
 console.log(cartArr);
@@ -238,7 +228,7 @@ console.log(cartArr);
 function getData() {
   let data = JSON.parse(localStorage.getItem('cartItem'));
   if (data) {
-   cartArr= data;
+    cartArr= data;
 
   }
 }

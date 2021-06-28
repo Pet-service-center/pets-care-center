@@ -1,7 +1,7 @@
 
 'use strict';
 
-<<<<<<< HEAD
+
 console.log(localStorage.getItem('cartItem'));
 let cartItem = [];
 localStorage.getItem=localStorage.getItem('cartItem');
@@ -24,9 +24,7 @@ function createCart(){
   }
 }
 createCart();
-=======
-let cartItems = JSON.parse(localStorage.getItem('cartItem')) || [];
-console.log(cartItems);
+
 // const table = document.getElementById('cart');
 // table.addEventListener('click', removeItemFromCart);
 // let cart;
@@ -98,4 +96,4 @@ console.log(cartItems);
 // }
 // // This will initialize the page and draw the cart on screen
 // renderCart();
->>>>>>> 4229babf06d244f9a770bfb6e85e3a4406af2100
+
