@@ -119,7 +119,7 @@ function render() {
     let div = document.createElement('div');
     div.setAttribute('id', `no.${i}`);
     section.appendChild(div);
-    section.className = "card"
+    div.className = "card"
 
     let infoPage = document.createElement('a');
     infoPage.setAttribute('href', './productInfo.html');
@@ -127,6 +127,9 @@ function render() {
     let img = document.createElement('img');
     img.src = Product.all[i].src;
     infoPage.appendChild(img);
+    img.className="productimg";
+
+
     let h3 = document.createElement('h1');
     h3.textContent = Product.all[i].name;
     div.appendChild(h3);
@@ -134,13 +137,18 @@ function render() {
     let p = document.createElement('p');
     div.appendChild(p);
     p.textContent = Product.all[i].description;
-
+    p.classname="description";
+     
+    let br = document.createElement('br');
+    p.appendChild(br);
+    br.innerHTML='';
     
     let input = document.createElement('INPUT');
     input.setAttribute('type', 'number');
     input.setAttribute('placeholder', 'Quantity');
     input.setAttribute('min', 0);
     div.appendChild(input);
+    input.className="input";
     let price = document.createElement('h3')
     div.appendChild(price);
     price.textContent = `price  ${Product.all[i].price}  `;
