@@ -1,123 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/reset.css" type='text/css' rel='resetsheet'>
-    </link>
-    <link href="./css/products.css" type='text/css' rel='stylesheet'>
-    </link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/reset.css" type='text/css' rel='resetsheet'> 
+  </link>
+   <link href="./css/products.css" type='text/css' rel='stylesheet'> 
+  </link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
-
-<body >
-    <section id="product">
-        <header classs="header">
-
-            <nav>
-                <a href="cart.html" id="cartLogo"><img src="./images/cart-logo.jpg" width=50px height=50px></a>
-            </nav>
-
-        </header>
-        <h1 class="h1">PetsNeed Products</h1>
-        <nav class="producttype">
-            <a id="food" href="">Food</a>
-            <a href="">Clothes</a>
-            <a href="">Tools</a>
-            <a href="">Houses</a>
-        </nav>
+<body>
+  <header>
+    <section id="HLogo">
+      <img id="logo" src="./images/aTe6AabAc.png" alt="">
+      <div>
+        <p>PSC</p>
+        <p>Pet Service Center</p>
+      </div>
+      <h1 class="h1">PetsNeed Products</h1>
     </section>
-
-
-    <main id="main">
-
-
-        <section id="ProductsImages">
-            <section class="row1">
-            <div class="col">
-                <span class="sales">30%</span>
-                <img id="img1" src="/images/Food/download.jpg">
-                <h3>Pets Food Container</h3>
-                <p>
-                    <li>Environmentally Friendly, </li>
-                    <li> Lid Storage Container</li>
-                    <li> Easy to Clean & Easy to Store</li>
-                </p>
-                <input type="number" placeholder="Quantity">
-                <a href="">Add to Cart</a>
-              </div>
-              <div class="col">
-                <img id="img2" src="/images/Food/hamsterFood.jpg">
-                <h3>SUNBURST GOURMET BLEND</h3>
-                <p>
-                    <li>with natural goodness.</li>
-                    <li>contains mixed seeds, grains, fruit & vegetables</li>
-                    <li>with DHA omega-3 </li>
-                </p>
-                <input type="number" placeholder="Quantity">
-                <a href="">Add to Cart</a>
-             </div>
-             <div clss="col">
-                <span class="sales">30%</span>
-                <img id="img3" src="/images/Food/hamsterfoods1.png">
-                <h3>Kaytee Wild Bird Food</h3>
-                <p>
-                    <li>Economical mix</li>
-                    <li>containing black oil sunflower</li>
-    
-                </p>
-                <input type="number" placeholder="Quantity">
-                <a href="">Add to Cart</a>
-               </div>
-            </section>
-            <section class="row1">
-            <div class="col">
-                <span class="sales">30%</span>
-                <img id="img1" src="/images/Food/catfood.jpg">
-                <h3>Pets Food Container</h3>
-                <p>
-                    <li>Age Range Description: All Life Stages</li>
-                    <li> Included Components: Lid Storage Container</li>
-                    <li> Special Features: Environmentally Friendly, Easy to Clean & Easy to Store</li>
-                </p>
-                <input type="number" placeholder="Quantity">
-                <a href="">Add to Cart</a>
-              </div>
-              <div class="col">
-                <img id="img2" src="/images/Food/allBirdsfood.jpg">
-                <h3>SUNBURST GOURMET BLEND</h3>
-                <p>
-                    <li>with natural goodness.</li>
-                    <li>contains mixed seeds, grains, fruit & vegetables</li>
-                    <li>with DHA omega-3 </li>
-                </p>
-                <input type="number" placeholder="Quantity">
-                <a href="">Add to Cart</a>
-             </div>
-             <div clss="col">
-                <span class="sales">30%</span>
-                <img id="img3" src="/images/Food/birdsfood.jpg">
-                <h3>Kaytee Wild Bird Food</h3>
-                <p>
-                    <li>Economical mix</li>
-                    <li>containing black oil sunflower</li>
-    
-                </p>
-                <input type="number" placeholder="Quantity">
-                <a href="">Add to Cart</a>
-               </div>
-            </section>
-        </section>
-    </main>
-
-    <footer></footer>
-    <script src="proudect.js"></script>
+    <section id="nav">
+      <a href="">Home</a>
+      <a href="./aboutus.html">About us</a>
+      <a href="">asasd</a>
+      <a href="cart.html" id="cartLogo"><img src="./images/cart-logo.jpg" width=50px height=50px></a>
+    </section>
+  </header>
+  <hr>
+  <br>
+  <nav class="producttype">
+      <a id="food" href="#"><button onclick="viewFood()">Food</button></a>
+      <a href="#"><button onclick="viewclothes()">Clothes</button></a>
+      <a href="#"><button onclick="viewtools()">Tools</button></a>
+      <a href="#"><button onclick="viewhouse()">Houses</button></a>
+    </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <main id="main">
+    <div id="ProductsImages"></section>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./js/proudect.js"></script>
 </body>
-
 </html>
