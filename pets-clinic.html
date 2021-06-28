@@ -56,7 +56,7 @@
       </section>
       <section class="appointmentForm">
         <fieldset class="appointmenFieldSet">
-          <form id="appointform" action="">
+          <form id="appointform">
             <div class="left-side">
               <label for="fname">Full name:</label>
               <input type="text" id="fname" name="fname" placeholder="John alsidi" required>
@@ -74,9 +74,9 @@
     <option value="lizard">LIZARD</option>
     <option value="other">OTHER</option>
   </select>
-              <label for="Appointment">Appointment:</label>
+              <label for="appointment">Appointment:</label>
 
-              <input type="date" id="Appointment" name="Appointment">
+              <input type="date" id="appointment" name="appointment">
 
               <label for="time">Preferred Time of Day</label>
               <select id="time" name="Time Type"> 
@@ -98,10 +98,26 @@
       </div>
       </form>
       </fieldset>
-      <div>
+      <!-- <div>
         <p id='informationSaved'></p>
-      </div>
 
+      </div> -->
+      <div>
+        <table id='informationSavedTable'>
+
+          <tr>
+            <th>fullName</th>
+            <th>email</th>
+            <th>phoneNumber</th>
+            <th>pet Type</th>
+            <th>AppointmentDate</th>
+            <th>dayTime</th>
+            <th>Additional Comments</th>
+          </tr>
+
+        </table>
+        <button id="clearBtn" onclick="myfunction()">Clear Table</button>
+      </div>
       <div>
         <p id="oppontment"></p>
       </div>

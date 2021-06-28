@@ -219,6 +219,65 @@ hr {
   box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
+#why{
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+}
+#why img{
+  width: 100%;
+}
+.whyDiv{
+  width: 400px;
+position: absolute;
+top: 30%;
+left: 7%;
+color: white;
+line-height: 1.5;
+}
+.whyDiv h2{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.whyDiv p{
+  font-size: 30px;
+}
+#services{
+  gap: 30px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 200px;
+  line-height: 1.5;
+}
+#services h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+#services p{
+  font-size: 20px;
+}
+
+#div1{
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 50px;
+}
+#services section{
+  display: flex;
+  gap: 100px;
+}
+#div2{
+  display: grid;
+  gap: 50px;
+}
+#div3{
+  display: grid;
+  gap: 50px;
+}
+#div4{
+  display: grid;
+  gap: 50px;
+}
 footer {
   width: 90%;
   text-align: center;
