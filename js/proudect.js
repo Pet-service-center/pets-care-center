@@ -119,7 +119,11 @@ function render() {
     let div = document.createElement('div');
     div.setAttribute('id', `no.{i}`);
     section.appendChild(div);
+
+    div.className = "card"
+
     section.className = 'card';
+
 
     let infoPage = document.createElement('a');
     infoPage.setAttribute('href', './productInfo.html');
@@ -127,6 +131,9 @@ function render() {
     let img = document.createElement('img');
     img.src = Product.all[i].src;
     infoPage.appendChild(img);
+    img.className="productimg";
+
+
     let h3 = document.createElement('h1');
     h3.textContent = Product.all[i].name;
     div.appendChild(h3);
@@ -135,13 +142,27 @@ function render() {
     div.appendChild(p);
     p.textContent = Product.all[i].description;
 
+    p.classname="description";
+     
+    let br = document.createElement('br');
+    p.appendChild(br);
+    br.innerHTML='';
+    
+
+
+
 
     let input = document.createElement('INPUT');
     input.setAttribute('type', 'number');
     input.setAttribute('placeholder', 'Quantity');
     input.setAttribute('min', 0);
     div.appendChild(input);
+
+    input.className="input";
+    let price = document.createElement('h3')
+
     let price = document.createElement('h3');
+
     div.appendChild(price);
     price.textContent = `price  {Product.all[i].price}  `;
     price.id='price';
@@ -159,21 +180,21 @@ function render() {
 
 }
 
-<<<<<<< HEAD
+
 
 document.addEventListener('click', function(e){
   if(e.target.tagName=='BUTTON'){
     //  alert('BUTTON CLICKED');
   }
 });
-=======
+
   
   // document.addEventListener('click', function(e){
   //   if(e.target.tagName=="BUTTON"){
   //   //  alert('BUTTON CLICKED');
   //   }
   // })
->>>>>>> 4229babf06d244f9a770bfb6e85e3a4406af2100
+
 // let btn = document.getElementById()
 
 // btn.addEventListener('click', addItem);
