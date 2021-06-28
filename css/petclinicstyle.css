@@ -199,6 +199,13 @@ td {
   text-align: left;
 }
 
+#clearBtn {
+  margin-top: 20px;
+  margin-left: 500px;
+  width: 80px;
+  height: 30px;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
