@@ -27,7 +27,43 @@ function appointmentFormSubmission(event) {
 
   let timeFavField = localStorage.getItem('time');
   let reviewTextField = localStorage.getItem('review');
-  informationSaved.innerHTML = (`The full name is :${fullNameField} , Email: ${emailField} and The phone number is: ${phoneNumberField}<br>It Pet :  ${pickTypeField} and want the appointment date at ${AppointmentDateField} during  ${ timeFavField } from the day.<br> Reason for Appointment & Additional Comments: ${reviewTextField}`);
+
+
+  // informationSaved.innerHTML = (`The full name is :${fullNameField} , Email: ${emailField} and The phone number is: ${phoneNumberField}<br>It Pet :  ${pickTypeField} and want the appointment date at ${AppointmentDateField} during  ${ timeFavField } from the day.<br> Reason for Appointment & Additional Comments: ${reviewTextField}`);
+  let table = document.getElementById('informationSavedTable');
+  let theBodyPart = document.createElement('tbody');
+  table.appendChild(theBodyPart);
+
+  let bodyRow = document.createElement('tr');
+  theBodyPart.appendChild(bodyRow);
+
+
+  let firstElement = document.createElement('td');
+  bodyRow.appendChild(firstElement);
+  firstElement.textContent = `${fullNameField}`;
+
+  let secondElement = document.createElement('td');
+  bodyRow.appendChild(secondElement);
+  secondElement.textContent = `${emailField}`;
+  let thirdElement = document.createElement('td');
+  bodyRow.appendChild(thirdElement);
+  thirdElement.textContent = `${phoneNumberField}`;
+
+  let fourthElement = document.createElement('td');
+  bodyRow.appendChild(fourthElement);
+  fourthElement.textContent = `${pickTypeField}`;
+
+  let fifthElement = document.createElement('td');
+  bodyRow.appendChild(fifthElement);
+  fifthElement.textContent = `${AppointmentDateField}`;
+
+  let sixthElement = document.createElement('td');
+  bodyRow.appendChild(sixthElement);
+  sixthElement.textContent = `${pickTypeField}`;
+
+  let seventhElement = document.createElement('td');
+  bodyRow.appendChild(seventhElement);
+  seventhElement.textContent = `${reviewTextField}`;
 
   document.getElementById('appointform').reset();
 }
@@ -52,9 +88,47 @@ function pageload() {
 
     let timeFavField = localStorage.getItem('time');
     let reviewTextField = localStorage.getItem('review');
-    informationSaved.innerHTML = (`The full name is :${fullNameField} , Email: ${emailField} and The phone number is: ${phoneNumberField}<br>It Pet :  ${pickTypeField} and want the appointment date at ${AppointmentDateField} during  ${ timeFavField } from the day.<br> Reason for Appointment & Additional Comments: ${reviewTextField}`);
+    // informationSaved.innerHTML = (`The full name is :${fullNameField} , Email: ${emailField} and The phone number is: ${phoneNumberField}<br>It Pet :  ${pickTypeField} and want the appointment date at ${AppointmentDateField} during  ${ timeFavField } from the day.<br> Reason for Appointment & Additional Comments: ${reviewTextField}`);
+    let table = document.getElementById('informationSavedTable');
+    let theBodyPart = document.createElement('tbody');
+    table.appendChild(theBodyPart);
+
+    let bodyRow = document.createElement('tr');
+    theBodyPart.appendChild(bodyRow);
+
+
+    let firstElement = document.createElement('td');
+    bodyRow.appendChild(firstElement);
+    firstElement.textContent = `${fullNameField}`;
+
+    let secondElement = document.createElement('td');
+    bodyRow.appendChild(secondElement);
+    secondElement.textContent = `${emailField}`;
+    let thirdElement = document.createElement('td');
+    bodyRow.appendChild(thirdElement);
+    thirdElement.textContent = `${phoneNumberField}`;
+
+    let fourthElement = document.createElement('td');
+    bodyRow.appendChild(fourthElement);
+    fourthElement.textContent = `${pickTypeField}`;
+
+    let fifthElement = document.createElement('td');
+    bodyRow.appendChild(fifthElement);
+    fifthElement.textContent = `${AppointmentDateField}`;
+
+    let sixthElement = document.createElement('td');
+    bodyRow.appendChild(sixthElement);
+    sixthElement.textContent = `${ timeFavField }`;
+
+    let seventhElement = document.createElement('td');
+    bodyRow.appendChild(seventhElement);
+    seventhElement.textContent = `${reviewTextField}`;
   } else {
     let informationSaved = document.getElementById('informationSaved');
     informationSaved.innerHTML = '';
   }
 }
+
+
+/////////////************ onther way to do this *///////////////////
+function appointmentForm(name, email, phone, pet, appontmentDate, )

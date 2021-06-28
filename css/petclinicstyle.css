@@ -172,6 +172,33 @@ textarea {
   color: black
 }
 
+#informationSavedTable {
+  border-collapse: collapse;
+  border-spacing: 30px;
+  font-size: 16.5px;
+  -webkit-box-shadow: 0px 0px 3px 5px, rgb(238, 134, 15);
+  -moz-box-shadow: 0px 0px 3px 5px rgb(238, 141, 15);
+  box-shadow: 0px 0px 3px 5px rgb(238, 141, 15);
+  filter: progid: DXImageTransform.Microsoft.Glow(color='white', Strength='7');
+  color: black;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
+th,
+td {
+  width: 50%;
+  border: 2px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
