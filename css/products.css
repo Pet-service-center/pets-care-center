@@ -166,7 +166,7 @@ nav a {
     border: none;
     padding: 10px;
     color: white;
-    background-color: rgb(238, 27, 27);
+    background-color: rgb(185, 134, 134);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -180,7 +180,7 @@ nav a {
   }
   
   #price{
-    color: rgb(206, 206, 206);
+    color: rgb(231, 4, 4);
     font-family:Impact 'Arial Narrow Bold', sans-serif;
     float: left;
   }
