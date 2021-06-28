@@ -11,22 +11,29 @@
   <section>
     <div id = "pets"></div>
     <div id = "form">
-        <form action="#" id="userInfo">
+        <form action="#" id="userInfo" class="form-style-4">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required>
-
+<br>
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required>
-
+<br>
         <label for="phone">Phone</label>
         <input type="text" name="phone" id="phone">
-
+<br>
         <input type="submit" value="Adopt"> 
         <button onclick="cancel()">Cancel</button>
     </form>
     </div>
 
 </section>
+<script type="text/javascript">
+    //auto expand textarea
+    function adjust_textarea(h) {
+        h.style.height = "20px";
+        h.style.height = (h.scrollHeight)+"px";
+    }
+    </script>
 <script src="./js/adopt.js"></script>
     <script src="./js/userAdopt.js"></script>
 </body>

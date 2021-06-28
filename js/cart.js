@@ -1,13 +1,34 @@
-/* global Cart */
 'use strict';
-// Create an event listener so that when the delete link is clicked, the removeItemFromCart method is invoked.
-
-let cartItems = JSON.parse(localStorage.getItem('cartItem')) || [];
-console.log(cartItems);
+console.log(localStorage.getItem('cartItem'));
+let cartItem = [];
+let data =localStorage.getItem=localStorage.getItem('cartItem');
+cartItem.push(JSON.parse(data));
+//console.log(cartItem[0][1]);
+//console.log(cartItem);
+console.log(cartItem[0]);
+let tBody =document.getElementById('tBody');
+function createCart(){
+  for(let i=0; i < cartItem.length;i++){
+    for(let j=0 ; j<cartItem[i].length ; j++)
+    {let tr=document.createElement('tr');
+      tBody.appendChild(tr);
+      let td=document.createElement('td');
+      tr.appendChild(td);
+      td.textContent=cartItem[i][j][0];
+      let td2=document.createElement('td');
+      tr.appendChild(td2);
+      td2.textContent=cartItem[i][j][1];
+      let td3=document.createElement('td');
+      tr.appendChild(td3);
+      td3.textContent='X';}
+  }
+}
+createCart();
+// let cartItems = JSON.parse(localStorage.getItem('cartItem')) || [];
+// console.log(cartItems);
 // const table = document.getElementById('cart');
 // table.addEventListener('click', removeItemFromCart);
 // let cart;
-
 // function loadCart() {
 //   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 //   cart = new Cart(cartItems);
@@ -20,7 +41,6 @@ console.log(cartItems);
 //   clearCart();
 //   showCart();
 // }
-
 // // TODO: Remove all of the rows (tr) in the cart table (tbody)
 // function clearCart() {
 //   while (table.rows.length > 0) {
@@ -62,7 +82,6 @@ console.log(cartItems);
 //     tr.appendChild(imgTd);
 //   }
 // }
-
 // function removeItemFromCart(event) {
 //   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
 //   // TODO: Save the cart back to local storage

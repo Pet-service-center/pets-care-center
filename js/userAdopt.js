@@ -5,6 +5,7 @@ let petsDiv = document.getElementById('pets');
 let index;
 
 function render() {
+
   for (let i = 0; i < Animals.all.length; i++) {
     if (Animals.all[i].id === id) {
       //console.log('found')
@@ -35,6 +36,7 @@ function render() {
 
 
       index = i;
+
 
     }
 
