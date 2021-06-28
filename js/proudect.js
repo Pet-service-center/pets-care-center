@@ -70,9 +70,27 @@ const toolImg = [
   ['bag for small dog', './images/dogbag.jpg', '40$'],
   ['Dog toys', './images/s.jpg', '78$'],
 ];
-let id =0;
+
+// return random number
+function getRandomInteger(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+let idArray=[];
+function getId() {
+  let id;
+  for (let i = 0; i < idArray.length; i++) {
+    do {
+      id = getRandomInteger(0, 1000);
+
+    } while (id === idArray[i]);
+  }
+  idArray.push(id);
+  return id;
+}
 const Product = function (name, src, price) {
-  this.id=0;
+  this.id = getId();
   this.name = name;
   this.src = src;
   this.price = price;
@@ -85,7 +103,6 @@ function generate(array) {
   Product.all = [];
   section.innerHTML = '';
   for (let i = 0; i < array.length; i++) {
-    id++;
     new Product(array[i][0], array[i][1], array[i][2]);
   }
 }
@@ -120,10 +137,8 @@ function render() {
     let btn = document.createElement('BUTTON');
     div.appendChild(btn);
     btn.innerHTML = 'Add to Cart';
-    btn.className="allcart"
-    btn.setAttribute('id', Product.all[i].id)
-    btn.addEventListener('click', addItem);
-    console.log(btn.className);
+    btn.setAttribute('id', Product.all[i].id);
+   
   }
  
 }
@@ -168,3 +183,27 @@ function viewtools() {
 }
 
 viewFood();
+
+let cartArr = [];
+
+section.addEventListener('click', addToCard);
+
+function addToCard(event) {
+
+  // add the the event for button only
+  if (event.target.textContent == 'Add to Cart') {
+    for (let i = 0; i <Product.all.length; i++) {
+      // get obj using the ID
+      if (Product.all[i].id == event.target.id) {
+      cartArr.push([Product.all[i].name , Product.all[i].price]);
+      localStorage.setItem('cartItem',cartArr);
+      console.log(cartArr);
+      //window.location.href='cart.html';
+
+      }
+
+    }
+
+  }
+}
+console.log(cartArr);
