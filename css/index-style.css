@@ -24,8 +24,9 @@ body {
 }
 
 #myBtn:hover {
-  background-color: rgb(73, 231, 184);
-  color: blueviolet;
+  border: 2px solid orange;
+  background-color: white;
+  color: orange;
 }
 
 #logo {
@@ -61,7 +62,7 @@ header {
 }
 
 #nav a {
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
   color: orange;
   font-size: 20px;
@@ -105,6 +106,8 @@ hr {
 
 .slider figure img {
   width: 20%;
+  height: 800px;
+  object-fit: cover;
   float: left;
 }
 
@@ -172,23 +175,29 @@ hr {
   width: 350px;
   height: 200px;
 }
+.links a{
+  width: 350px;
+  height: 200px;
+}
 
 .pit-services,
 .pit-shop,
 .pit-adapter {
+  margin-top: 50px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/best-pets-for-kids-1-1-1024x683.jpeg);
   background-size: cover;
-  box-shadow: 0 40px 70px rgba(0, 0, 0, .2);
+  box-shadow: 0 0px 60px orange;
   border-radius: 110px;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: white;
   border: 3px solid orange;
+  transition: 00.4s;
 }
 
 .pit-services:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
 
@@ -202,20 +211,87 @@ hr {
 }
 
 .pit-shop:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
 
 .pit-adapter:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0px 30px orange;
   transform: scale(.90);
 }
-
 footer {
+  width: 90%;
   text-align: center;
   margin-top: 30px;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
-  color: orange;
+  margin-left: 5%;
+  background-color: orange;
+  color: white;
+}
+footer h6{
+  color: gray;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.upSection {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 30px;
+}
+.flexDiv:first-child {
+  width: 300px;
+  align-content: left;
+  font-size: large;
+}
+/* #footerLogo {
+  width: 100px;
+  height: 100px;
+} */
+.usefulLinks a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: white;
+
+}
+.fastLinks a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: white;
+}
+#navIcons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#navIcons a {
+  width: 25px;
+  text-decoration: none;
+}
+#navIcons img {
+ width: 25px;
+}
+.map iframe {
+  width: 170px;
+  height: 170px;
+  
+}
+footer hr {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+}
+.downSection {
+  margin-top: 20px;
+}
+.downSection p {
+  text-align: center;
 }

@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./css/adopt.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +41,23 @@
       </header>
       <hr>
     <main>
-  
+  <section id ="hero">
+    
+  </section>
+  <section id = "kind">
+      <button onclick="catlist()"><img src="./img/catlist.jpg" alt=""></button>
+      <button onclick="doglist()"><img src="./img/doglist.jpg" alt=""></button>
+      <button onclick="hamsterlist()"><img src="./img/homsterlist.jpg" alt=""></button>
+      <button onclick="fishlist()"><img src="./img/fishlist.jpg" alt=""></button>
+      <button onclick="parrotlist()"><img src="./img/parrotlist.jpg" alt=""></button>
+      <button onclick="turtlelist()"><img src="./img/turttlelist.jpg" alt=""></button>
+      <h3>Cat</h3>
+      <h3>Dog</h3>
+      <h3>Hamster</h3>
+      <h3>Parrot</h3>
+      <h3>Turtle</h3>
+      <h3>Fish</h3>
+  </section>
 
         <button class="open-button" onclick="openForm()">Add new pets for adoption</button>
 
@@ -57,6 +76,8 @@
                 </select>
                 <label for="age"><b>Age</b></label>
                 <input type="number" min="1" name="age" placeholder="Number of week" required>
+                <label for="name"><b>Name</b></label>
+                <input type="text"name="name" placeholder="Pet name" required>
                 
                 <label for="img"><b>Photo</b></label>
                 <input type="text" placeholder="path Ex: c/res/drawable/images/image_1.png " name="img" required>
@@ -75,25 +96,27 @@
         </div>
 
         <div id="mainDiv">
-            <h4>Cat Section</h4> <br>
+           
             <div id="catDiv"></div>
 
-            <h4>Dog Section</h4> <br>
+           
             <div id="dogDiv"></div>
 
-            <h4>Hamster Section</h4><br>
+        
             <div id="hamsterDiv"></div>
 
-            <h4>Fish Section</h4><br>
+         
             <div id="fishDiv"></div>
 
-            <h4>Parrot Section</h4><br>
+         
             <div id="birdDiv"></div>
 
-            <h4>Turtle Section</h4><br>
+           
             <div id="turtleDiv"></div>
 
         </div>
+
+        
 
     </main>
     <hr>
@@ -101,6 +124,7 @@
 
 
 <script src="./js/adopt.js"></script>
+<script src="./js/petAdopt.js"></script>
 
 </body>
 

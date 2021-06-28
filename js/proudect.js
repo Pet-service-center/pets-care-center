@@ -1,6 +1,7 @@
 'use strict';
 
 const foodImg = [
+
   ['Keytee Parrarrot food', './images/food/birdsfood.jpg', '15', 'Clean, high quality, wholesome seeds and grains with all the natural protein, fiber, oils, and nutrients of whole grains'],
   ['Whiskas Cat Food', './images/food/catfood.jpg', '12','Dry Cat Food, Ocean Fish flavor with milk This is a Non-vegetarian product.Made with high quality ingredients.No artificial flavourings or preservatives.A perfect balance of vitamins and minerals.'],
   ['pedigree Dog Food', './images/food/download.jpg', '30',' Adult Complete Nutrition Roasted Chicken, Rice & Vegetable Flavor Dry Dog Food is formulated to give dogs all of the energy and nourishment .This chicken-flavor dog food is packed with B vitamins, zinc and omega-6 fatty acid .contains leading levels of the antioxidant, vitamin E. '],
@@ -15,6 +16,10 @@ const foodImg = [
   ['cat dish food ', './images/food/images.jpg', '40','Cat Food Bowls Set,Raised Cat Bowls for Food and Water,Ceramic Elevated Pet Dishes Bowls with Stand,12 oz Cats and Small Dogs Bowls,Dishwasher Safe'],
   ['Menu hamster food', './images/food/hamsterfoods1.jpg', '12','Contains essentials vitamins, minerals & trace elementsGood quality extruded productsLinoleic acid and amino acids added Sugar less recipe, no artificial flavoring'],
 ];
+
+
+
+
 
 const clothesImg = [
   ['Cute cat pajama', './images/clothes/catpajama.jpg', '20','Adorable cute coton cat pajama'],
@@ -46,6 +51,7 @@ const houseImg = [
   ['Bird house', './images/house/birdhouse4.jpg', '30','BIRD CAGEMETAL DECOR IDEAS USING BIRD CAGE'],
 ];
 const toolImg = [
+
   ['cat-toilet', './images/cat-toilet.jpg', '60','Specially Designed Training Seat Training GuideInsider Tip CardAccess to Training ForumCitiNip - premium catnip'],
   ['cat bag', './images/catbag.jpg', '45','Transparent design, helpful for calming down pets anxiety, provide your pet a secure environment. Breathable and comfortable. Suitable for small or medium dogs and cats.Made of premium material, durable, breathable and comfortable.Transparent design, allow your pet to view sunshine and scenery from the outside world. Several ventilation holes on the side of the backpack, provide suffient air circulation, make your pet breathe comfortably'],
   ['Pet Massage gloves', './images/catshower.jpg', '30','FEMW Pet Grooming Glove - Efficient Pet Hair Remover Mitts - Pet Massage Gloves - Gentle Deshedding Brush Glove - for Dog Cat Horse with Long & Short Fur'],
@@ -59,6 +65,7 @@ const toolImg = [
   ['bag for small dog', './images/dogbag.jpg', '40','Pet Carrier Backpack Adjustable Pet Front Cat Dog Carrier Travel Bag Legs Out'],
   ['Dog toys', './images/s.jpg', '78','KONG AirDog combines two classic dog toys -the tennis ball texture and the squeaker-to create the perfect fetch toy. Now available in dual materials for added strength, the non-abrasive, durable and high-quality material will not wear down dogs teeth.'],
   ['bag for small dog', './images/dogbag.jpg', '40','Pet Carrier Backpack Adjustable Pet Front Cat Dog Carrier Travel Bag Legs Out'],
+
 ];
 
 
@@ -80,9 +87,147 @@ function getId() {
   }
   idArray.push(id);
   return id;
+
+
 }
 
 
+
+
+const Product = function (name, src, price, description) {
+  this.id = getId();
+  this.name = name;
+  this.src = src;
+  this.price = price;
+  this.description= description;
+  this.quantity = 0;
+  Product.all.push(this);
+};
+Product.all = [];
+
+function generate(array) {
+  Product.all = [];
+  section.innerHTML = '';
+  for (let i = 0; i < array.length; i++) {
+
+
+    new Product(array[i][0], array[i][1], array[i][2], array[i][3]);
+  }
+}
+
+let section = document.getElementById('ProductsImages');
+
+
+
+
+function render() {
+  for (let i = 0; i < Product.all.length; i++) {
+
+
+
+    let div = document.createElement('div');
+    div.setAttribute('id', 'no.{i}');
+    section.appendChild(div);
+
+    div.className = "card"
+
+    section.className = 'card';
+
+
+    let infoPage = document.createElement('a');
+    infoPage.setAttribute('href', './productInfo.html');
+    div.appendChild(infoPage);
+    let img = document.createElement('img');
+    img.src = Product.all[i].src;
+    infoPage.appendChild(img);
+    img.className="productimg";
+
+
+    let h3 = document.createElement('h1');
+    h3.textContent = Product.all[i].name;
+    div.appendChild(h3);
+
+    
+    
+    let p = document.createElement('p');
+    div.appendChild(p);
+    p.textContent = Product.all[i].description;
+
+    p.classname="description";
+     
+    
+
+
+
+
+    let input = document.createElement('INPUT');
+    input.setAttribute('type', 'number');
+    input.setAttribute('placeholder', 'Quantity');
+    input.setAttribute('min', 0);
+    div.appendChild(input);
+
+    
+
+
+
+
+
+    input.className="input";
+
+    let price = document.createElement('h3')
+
+    let price = document.createElement('h3');
+
+    div.appendChild(price);
+    price.textContent = 'price  {Product.all[i].price}  ';
+    price.id='price';
+
+
+
+
+
+
+    let btn = document.createElement('BUTTON');
+    div.appendChild(btn);
+    btn.innerHTML = 'Add to Cart';
+    btn.className="input";
+    btn.setAttribute('id', Product.all[i].id);
+
+  }
+
+}
+
+
+
+// let btn = document.getElementById()
+
+// btn.addEventListener('click', addItem);
+
+// function addItem (){
+//   console.log('111');
+//   window.location='cart.html';
+// }
+
+function viewFood() {
+  generate(foodImg);
+  render();
+
+}
+
+generate(clothesImg);
+
+
+
+function viewclothes() {
+  generate(clothesImg);
+  render();
+}
+
+
+function viewhouse() {
+  generate(houseImg);
+  render();
+}
 
 
 const Product = function (name, src, price, description) {
@@ -207,6 +352,7 @@ function viewtools() {
   render();
 }
 
+
 viewFood();
 
 
@@ -229,18 +375,22 @@ function addToCard(event) {
       }
     }
   }
-  if(event.target.infoPage){
-itemInfo
-  }
+  
+
+  
 }
 console.log(cartArr);
 
 function getData() {
   let data = JSON.parse(localStorage.getItem('cartItem'));
   if (data) {
-   cartArr= data;
+
+    cartArr= data;
+
 
   }
 }
 
+
 getData();
+

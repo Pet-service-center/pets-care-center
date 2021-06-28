@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/petclinicstyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/petclinicstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +26,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  </head>
+</head>
 
 <body>
 
   <header>
     <section id="HLogo">
       <img id="logo" src="./images/aTe6AabAc.png" alt="">
-      <div><p>PSC</p>
-        <p>Pet Service Center</p></div>
+      <div>
+        <p>PSC</p>
+        <p>Pet Service Center</p>
+      </div>
 
     </section>
     <section id="nav">
@@ -46,63 +48,66 @@
   <hr>
 
   <main>
-   <section class="content">
+    <section class="content">
 
-   
-    <section class='Appointment'>
-      <p>Request Appointment Please complete this form to request an appointment. We will contact you to confirm your booking. If you have not received confirmation after one business day, please contact us.</p>
-    </section>
-    <section class="appointmentForm">
-      <fieldset class="appointmenFieldSet">
-        <form id="appointform" action="">
-          <div class="left-side">
-          <label for="fname">Full name:</label>
-          <input type="text" id="fname" name="fname" placeholder="John alsidi" required>
-          <label for="email">Enter your email:</label>
-          <input type="email" id="email" name="email" placeholder="example@gmail.com">
-          <label for="phoneNumber">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" placeholder="+962-123-4567891" required><br><br>
-        </div>
-        <div class="right-side">
-          <label>pick type</label>
-          <select id="pet" name="Pet Type" required>
+
+      <section class='Appointment'>
+        <p>Request Appointment Please complete this form to request an appointment. We will contact you to confirm your booking. If you have not received confirmation after one business day, please contact us.</p>
+      </section>
+      <section class="appointmentForm">
+        <fieldset class="appointmenFieldSet">
+          <form id="appointform" action="">
+            <div class="left-side">
+              <label for="fname">Full name:</label>
+              <input type="text" id="fname" name="fname" placeholder="John alsidi" required>
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com">
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="+962-123-4567891" required><br><br>
+            </div>
+            <div class="right-side">
+              <label>pick type</label>
+              <select id="pet" name="Pet Type" required>
     <option value="dog">DOG</option>
     <option value="cat">CAT</option>
     <option value="bird">BIRD</option>
     <option value="lizard">LIZARD</option>
     <option value="other">OTHER</option>
   </select>
-          <label for="Appointment">Appointment:</label>
+              <label for="Appointment">Appointment:</label>
 
-          <input type="date" id="Appointment" name="Appointment">
+              <input type="date" id="Appointment" name="Appointment">
 
-          <label for="time">Preferred Time of Day</label>
-          <select id="time" name="Time Type"> 
-             <option value="dog">Early Morning</option>
-             <option value="cat">Late Morning</option>
-             <option value="bird">Early Afternoon </option>
-             <option value="lizard">Late Afternoon </option>
-             <option value="other">Early Evening </option>
+              <label for="time">Preferred Time of Day</label>
+              <select id="time" name="Time Type"> 
+             <option value="Early Morning">Early Morning</option>
+             <option value="Late Morning">Late Morning</option>
+             <option value="Early Afternoon">Early Afternoon </option>
+             <option value="Late Afternoon">Late Afternoon </option>
+             <option value="Early Evening">Early Evening </option>
            </select>
-          </section>
-          <div class="submit-info">
-          <label for="review">Reason for Appointment & Additional Comments:</label>
-          <textarea id="review" name="review" rows="4" cols="50"> </textarea>
-          <div class="btns">
-            <button id="appointmentSubmit" type="submit"> Submit</button>
-          </div>
-         
-          
+      </section>
+      <div class="submit-info">
+        <label for="review">Reason for Appointment & Additional Comments:</label>
+        <textarea id="review" name="review" rows="4" cols="50"> </textarea>
+        <div class="btns">
+          <button id="appointmentSubmit" type="submit"> Submit</button>
         </div>
-        </form>
+
+
+      </div>
+      </form>
       </fieldset>
-    
-      <div id="oppontment">
-        
+      <div>
+        <p id='informationSaved'></p>
+      </div>
+
+      <div>
+        <p id="oppontment"></p>
       </div>
 
     </section>
-  
+
   </main>
   <hr>
   <footer>all rights reserved <br> PS-providores ©</footer>
