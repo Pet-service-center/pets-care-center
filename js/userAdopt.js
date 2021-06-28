@@ -32,10 +32,8 @@ function render() {
         div.appendChild(h5);
         let p4 = document.createElement('p');
         div.appendChild(p4);
-        let button = document.createElement('button');
-        button.textContent = 'Adoption';
-        p4.appendChild(button);
-        button.setAttribute('id', Animals.all[i].id);
+      
+
 
         index=i;
   
