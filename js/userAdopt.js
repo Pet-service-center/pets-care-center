@@ -15,23 +15,26 @@ function render() {
         let img = document.createElement('img');
         img.src = Animals.all[i].img;
         div.appendChild(img);
+        let div2=document.createElement('div');
+        petsDiv.appendChild(div2);
+        div2.setAttribute('id','div2');
         let h1 = document.createElement('h1');
         h1.textContent = Animals.all[i].name;
-        div.appendChild(h1);
+        div2.appendChild(h1);
         let p1 = document.createElement('p');
         p1.textContent = `${Animals.all[i].age} week`;
-        div.appendChild(p1);
+        div2.appendChild(p1);
         let p2 = document.createElement('p');
         p2.textContent = Animals.all[i].city;
-        div.appendChild(p2);
+        div2.appendChild(p2);
         let p3 = document.createElement('p');
         p3.textContent = Animals.all[i].phone;
-        div.appendChild(p3);
+        div2.appendChild(p3);
         let h5 = document.createElement('h5');
         h5.textContent = Animals.all[i].description;
-        div.appendChild(h5);
+        div2.appendChild(h5);
         let p4 = document.createElement('p');
-        div.appendChild(p4);
+        div2.appendChild(p4);
       
 
 
