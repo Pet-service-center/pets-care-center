@@ -8,11 +8,8 @@ const foodImg = [
   ['Food-And-Water-Dispenser', './images/food/allBirdsfood.jpg', '25','White Millet, Oats, Sun-Cured Timothy Hay, Wheat, Sun-Cured Alfalfa Hay, Corn, Sunflower Seeds, Red Milo, Flaked Peas, Flaked Beans,Sun-Cured Alfalfa Hay'],
   ['Wild Bird Food', 'images/food/WildBirdFood.jpg', '18','Attracts a wide variety of birds Seed mix is perfect for hopper feeders, platform feeders and tube feedersContains millet, black oil sunflower seed, cracked corn, wheat and vitaminsMade in the USA.'],
   ['rabbit food', './images/food/rabbitfoods.jpg', '24','high-quality mix that contains all of the natural protein, fiber, oils and nutrients of whole grains. Fortified to ensure a balance blend, Supreme utilizes natural seeds. '],
-  ['water continer', './images/food/waterdishes.jpg', '25','Clear High Quality Accrylic Plastic finish-Dishwasher safe. Design blends in with any decor.20 year patented proven design - Hand made in  United States of America '],
   ['Rabbit Food', './images/food/rabbitfood.jpg', '25','A healthy, all-natural blend of species-appropriate dried mixed fruits, seeds, grains, nuts and pre-cooked legumes.Enhanced with vitamins, minerals and amino acids.'],
-  [' food Dish', './images/food/foodDishes.jpg', '15','Non-Skidding & Flipping - The bone-shaped base is made of food-grade silicone, and it is designed to better hold the bowls and prevent them from tipping and skidding. '],
   ['hamster food', './images/food/hamsterFood.jpg', '17','White Millet, Oats, Sun-Cured Timothy Hay, Wheat, Sun-Cured Alfalfa Hay, Corn, Sunflower Seeds, Red Milo, Flaked Peas, Flaked Beans, Peanuts, Yellow Peas, Flaked Carrots. '],
-  ['cat dish food ', './images/food/images.jpg', '40','Cat Food Bowls Set,Raised Cat Bowls for Food and Water,Ceramic Elevated Pet Dishes Bowls with Stand,12 oz Cats and Small Dogs Bowls,Dishwasher Safe, with white color'],
   ['Menu hamster food', './images/food/hamsterfoods1.jpg', '12','Contains essentials vitamins, minerals & trace elementsGood quality extruded productsLinoleic acid and amino acids added Sugar less recipe, no artificial flavoring.'],
 
 ];
@@ -119,48 +116,31 @@ function render() {
 
 
     let div = document.createElement('div');
-    div.setAttribute('id', 'no.{i}');
     section.appendChild(div);
     div.className = 'card';
 
-
-
-    // let infoPage = document.createElement('a');
-    // infoPage.setAttribute('href', './productInfo.html');
-    // div.appendChild(infoPage);
     let img = document.createElement('img');
     img.src = Product.all[i].src;
     div.appendChild(img);
     img.className='productimg';
 
-
     let h3 = document.createElement('h1');
     h3.textContent = Product.all[i].name;
     div.appendChild(h3);
 
-
-
     let p = document.createElement('p');
     div.appendChild(p);
     p.textContent = Product.all[i].description;
-
     p.classname='description';
-
 
     let botDiv=document.createElement('div');
     botDiv.setAttribute('id','botDiv');
     div .appendChild(botDiv);
 
-
     let price = document.createElement('h3');
     botDiv.appendChild(price);
     price.textContent = `price ${Product.all[i].price}`;
     price.id='price';
-
-
-
-
-
 
     let btn = document.createElement('BUTTON');
     botDiv.appendChild(btn);
@@ -246,7 +226,7 @@ function addToCard(event) {
         cartArr.push([Product.all[i].name , Product.all[i].price]);
         localStorage.setItem('cartItem',JSON.stringify(cartArr));
         console.log(cartArr);
-       
+
       }
     }
   }
@@ -261,8 +241,8 @@ function getData() {
   if (data) {
     //for(let i = 0 ; i< data.length; i++ )
   // {
-      cartArr.push(JSON.parse(data));
+    cartArr.push(JSON.parse(data));
     // }
- }
+  }
 }
 getData();

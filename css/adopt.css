@@ -1,60 +1,72 @@
 
-#logo{
-    width: 100px;
-  }
-  header{
-   align-items: center;
-    height: 100px;
-    width: 90%;
-    margin-left: 5%;
-    display: flex;
-    justify-content: space-between;
-  }
+#logo {
+  width: 220px;
+}
 
-  #HLogo{
-    gap: 10px;
-    display: flex;
-    align-items: center;
-  }
-  #HLogo div p:nth-child(1){
-    font-family: 'Indie Flower', cursive;
-    color: orange;
-    font-size: 50px;
-  }
-  #HLogo div p:nth-child(2){
-    color: orange;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  #nav a{
-    padding: 20px;
-    text-decoration: none;
-    color: orange;
-    font-size: 30px;
-    margin-left: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: 0.4s;
-  }
-  #nav a:hover{
-    color: white;
-    background-color: orange;
-  }
+header {
+  margin-top: 10px;
+  align-items: center;
+  height: 100px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#HLogo {
+  gap: 10px;
+  display: flex;
+  align-items:center;
   
-  hr{
-    background-color: orange;
-    height: 5px;
-    border: none;
-    width: 90%;
-    margin-left: 5%;}
+}
+span{
+  color: #fe793d;
+}
+#HLogo div p:nth-child(1) {
+  font-family: 'Lobster', cursive;
+  color: rgba(42, 173, 196, 0.911);
+  font-size: 45px;
+  position: absolute;
+  top: 10px;
+  left: 170px;
+}
 
-  footer{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    color: orange;
-  }
+#HLogo div p:nth-child(2) {
+  color: #fe793d;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 170px;
+}
+
+#nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: rgba(42, 173, 196, 0.911);
+  font-size: 20px;
+  margin-left: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.4s;
+}
+
+#nav a:hover {
+  color: white;
+  background-color: rgba(42, 173, 196, 0.911);
+ 
+}
+
+hr {
+  background-color: #fe793d;
+  height: 1px;
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
 
 
   main {
@@ -116,7 +128,7 @@ div div div button{
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: cornflowerblue;
+    background-color: rgba(42, 173, 196, 0.911);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -130,7 +142,7 @@ position: relative;
 top:20px
 }
 div div div  button:hover {
-  background-color: cornflowerblue;
+  background-color: rgba(42, 173, 196, 0.911);
     opacity: 0.7;
   }
 
@@ -151,7 +163,7 @@ div div div  button:hover {
   width: 160px;
   height: 160px;
   border-radius: 100px;
-  border: #e29219  2px solid;
+  border: rgba(42, 173, 196, 0.911)  2px solid;
 }
 
 button img {
@@ -233,10 +245,54 @@ button img {
   opacity: 1;
 }
 h3{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-right: 52px;
+    color: rgba(42, 173, 196, 0.911);
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color:rgba(42, 173, 196, 0.911);
+  color: white;
+  height: 120px;
+}
+#navIcons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#navIcons a {
+  margin-top: 20px;
+  width: 25px;
+ 
+  text-decoration: none;
+}
+#navIcons img {
+  margin-top: 20px;
+ width: 25px;
+ 
+}
 
+footer hr {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+}
+.downSection {
+  margin-top: 20px;
+}
+footer p {
+  text-align: center;
+  margin-top: 10px;
+  color: #000;
+  
+  
+}
 
 
