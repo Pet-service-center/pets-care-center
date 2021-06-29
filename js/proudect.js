@@ -147,10 +147,13 @@ function render() {
     p.classname='description';
 
 
+    let botDiv=document.createElement('div');
+    botDiv.setAttribute('id','botDiv');
+    div .appendChild(botDiv);
 
 
     let price = document.createElement('h3');
-    div.appendChild(price);
+    botDiv.appendChild(price);
     price.textContent = `price ${Product.all[i].price}`;
     price.id='price';
 
@@ -160,7 +163,7 @@ function render() {
 
 
     let btn = document.createElement('BUTTON');
-    div.appendChild(btn);
+    botDiv.appendChild(btn);
     btn.innerHTML = 'Add to Cart';
     btn.className='input';
     btn.setAttribute('id', Product.all[i].id);
