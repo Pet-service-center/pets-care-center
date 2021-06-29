@@ -98,7 +98,7 @@ div div div {
 
     margin: auto;
     padding: 2em;
-    border-radius: 1em;
+    border-radius: 5px 50px;
     border: 1px solid transparentize(white, 0.5);
     text-shadow: 0 0 1em transparentize(black, 0.5);
     background: transparentize(white, 0.8);
@@ -109,17 +109,32 @@ div div div {
 } 
 
 div div div p {
-    color: grey;
-    font-size: 12px;
+    color: rgb(68, 67, 67);
+    font-size: 16px;
+   
 }
 
+.petName{
+  color: #fe793d;
+  padding: 5px;
+  font-size: 24;
+  font-weight: bold;
+  border: 3px solid #fbc6d0;
+  padding: 10px;
+  margin: 0px 60px;
+}
 div div div img{
     width: 100%;
     height: 350px;
     object-fit: cover;
     margin: auto;
+    border-radius: 5px 50px;
 }
 
+.petDesc{
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 
 
@@ -133,6 +148,7 @@ div div div button{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    border-radius: 3px 20px;
 }
 
 h4{
@@ -172,6 +188,9 @@ button img {
   border-radius: 100px;
 }
 
+button img:hover{
+  opacity: 0.7;
+}
 
 /* form */
 * {box-sizing: border-box;}
@@ -189,6 +208,7 @@ button img {
   right: 28px;
   width:280px;
   z-index: 20;
+  border: 2px solid #fe793d;
 }
 
 /* The popup form - hidden by default */
@@ -198,7 +218,7 @@ button img {
   bottom: 0;
   right: 15px;
   border: 3px solid #f1f1f1;
-  z-index: 9;
+  z-index: 40;
 }
 
 /* Add styles to the form container */
@@ -225,19 +245,22 @@ button img {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #ffbb00;
-  color: white;
+  background-color: rgba(42, 173, 196, 0.911);;
+  color: #222;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  font-weight: bold;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: rgb(100, 71, 9);
+  background-color: #fbc6d0;
+  color: #000;
+  font-weight: bold;
 }
 
 /* Add some hover effects to buttons */
