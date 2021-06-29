@@ -186,14 +186,21 @@ label span {
 }
 
 #cart thead tr th {
-  color: #777;
+  color: rgb(22, 19, 19);
   border-bottom: 3px solid #062f4f;
   font-weight: bold;
   padding: .5em 1em;
   background: lavender;
   text-align: center;
+  border: 2px solid rgb(121, 37, 37);
+  width: 200px;
 }
 
+#cart thead tr .itemHeader{
+
+  width: 40%;
+  height: 40%;
+}
 
 #cart tr td {
   border-bottom: 1px solid #062f4f;
@@ -201,10 +208,11 @@ label span {
   color: #777;
   padding: .5em 1em;
   text-align: center;
-  width: auto;
   
-  
+  border-collapse: collapse;
+  border: 2px solid rgb(121, 37, 37);
 }
+
 
 #cart tr td:last-child,
 #cart tr th:last-child {
@@ -218,5 +226,17 @@ label span {
   color: red;
   cursor: pointer;
   text-align: center;
+  border: 2px solid rgb(121, 37, 37);
   
 }
+
+
+ #total {
+display : flex;
+margin-left:  28%;
+gap: 194px;
+border: 
+padding :rgb(121, 37, 37)
+
+
+ }

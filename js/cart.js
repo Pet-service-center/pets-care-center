@@ -46,12 +46,19 @@ function createCart() {
     }
 
    // let div = document.getElementById('total');
-   let h3 = document.createElement('h3');
-  div.appendChild(h3);
-   h3.textContent = total;
+  //  let h3 = document.createElement('h3');
+  // div.appendChild(h3);
+  //  h3.textContent = total;
 
+   let tr2 = document.createElement('tr');
+   tBody.appendChild(tr2);
+   let td4 = document.createElement('td');
+   tr2.appendChild(td4);
+   td4.textContent ="The total";
 
-
+   let td5 = document.createElement('td');
+   tr2.appendChild(td5);
+   td5.textContent = total;
   }
 
 }
