@@ -4,9 +4,13 @@ let cartItem = [];
 function getData() {
   let data = localStorage.getItem('cartItem');
   if (data) {
-    cartItem.push(JSON.parse(data));
+  // for(i = 0 ; i< data.length; i++ )
+   //{
+      cartItem.push(JSON.parse(data));
+   // }
   }
 }
+console.log(cartItem)
 getData();
 // let data =localStorage.getItem('cartItem');
 // cartItem.push(JSON.parse(data));

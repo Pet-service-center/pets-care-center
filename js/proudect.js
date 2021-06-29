@@ -121,17 +121,16 @@ function render() {
     let div = document.createElement('div');
     div.setAttribute('id', 'no.{i}');
     section.appendChild(div);
-
     div.className = 'card';
 
 
 
-    let infoPage = document.createElement('a');
-    infoPage.setAttribute('href', './productInfo.html');
-    div.appendChild(infoPage);
+    // let infoPage = document.createElement('a');
+    // infoPage.setAttribute('href', './productInfo.html');
+    // div.appendChild(infoPage);
     let img = document.createElement('img');
     img.src = Product.all[i].src;
-    infoPage.appendChild(img);
+    div.appendChild(img);
     img.className='productimg';
 
 
@@ -151,8 +150,6 @@ function render() {
 
 
     let price = document.createElement('h3');
-
-
     div.appendChild(price);
     price.textContent = `price ${Product.all[i].price}`;
     price.id='price';
@@ -246,7 +243,7 @@ function addToCard(event) {
         cartArr.push([Product.all[i].name , Product.all[i].price]);
         localStorage.setItem('cartItem',JSON.stringify(cartArr));
         console.log(cartArr);
-        //window.location.href='cart.html';
+       
       }
     }
   }
@@ -255,12 +252,14 @@ function addToCard(event) {
 }
 console.log(cartArr);
 
+
 function getData() {
-  let data = JSON.parse(localStorage.getItem('cartItem'));
+  let data = localStorage.getItem('cartItem');
   if (data) {
-    cartArr= data;
-
-  }
+    //for(let i = 0 ; i< data.length; i++ )
+  // {
+      cartArr.push(JSON.parse(data));
+    // }
+ }
 }
-
 getData();
