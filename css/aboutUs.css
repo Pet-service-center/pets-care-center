@@ -50,6 +50,13 @@ span{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: 0.4s;
 }
+.about-section p {
+  font-size: 50px;
+  border-radius: 60%;
+ 
+}
+
+
 
 #nav a:hover {
   color: white;
