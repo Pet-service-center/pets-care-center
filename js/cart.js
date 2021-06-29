@@ -5,12 +5,10 @@ function getData() {
   let data = localStorage.getItem('cartItem');
   if (data) {
   // for(i = 0 ; i< data.length; i++ )
-   //{
-      cartItem.push(JSON.parse(data));
-   // }
-  }
+   // {
+      cartItem.push(JSON.parse(data));}
+ // }
 }
-console.log(cartItem)
 getData();
 // let data =localStorage.getItem('cartItem');
 // cartItem.push(JSON.parse(data));
@@ -19,7 +17,8 @@ getData();
 //console.log(cartItem[0]);
 
 let tBody = document.getElementById('tBody');
-
+let total = 0;
+let div = document.getElementById('total');
 function createCart() {
   if (cartItem.length > 0) {
 
@@ -27,21 +26,31 @@ function createCart() {
 
       let tr = document.createElement('tr');
       tBody.appendChild(tr);
-      tr.setAttribute('id', cartItem[0][i][0]);
+      //tr.setAttribute('id', cartItem[0][i][0]);
 
-      let td = document.createElement('td');
-      tr.appendChild(td);
-      td.textContent = cartItem[0][i][0];
+
+
+      //td.textContent = cartItem[0][i][0];
+
+
       let td2 = document.createElement('td');
       tr.appendChild(td2);
-      td2.textContent = cartItem[0][i][1];
+      td2.textContent = cartItem[0][i][0];
+
       let td3 = document.createElement('td');
       tr.appendChild(td3);
-      td3.textContent = 'X';
+      td3.textContent = cartItem[0][i][1];
       //td3.setAttribute('class', 'delete')
-
+      total+=Number(cartItem[0][i][1]); 
 
     }
+
+   // let div = document.getElementById('total');
+   let h3 = document.createElement('h3');
+  div.appendChild(h3);
+   h3.textContent = total;
+
+
 
   }
 
