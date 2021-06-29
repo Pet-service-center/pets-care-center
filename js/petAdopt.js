@@ -43,7 +43,6 @@ function getData() {
 
 
 getData();
-
 // object
 function Animals(type, name,description, age, city, phone, img) {
 
@@ -75,39 +74,39 @@ function addMainObj() {
   new Animals('parrot','Sam', descr, 8, 'Amman', '0778965412', './img/bird3.jpg');
   descr = 'I love my bird very much, please take care of it';
   new Animals('parrot','Sozy', descr, 4, 'Aqapa', '0775684585', './img/bird4.jpg');
-  descr = 'sometext';
+  descr = 'My beautiful cat loves to sleep, don\'t disturb her and secure her a warm bed';
   new Animals('cat','Mesho', descr, 2, 'Amman', '078542132', './img/cat1.webp');
-  descr = 'sometext';
+  descr = 'Always play with it and give it some time to get used to you';
   new Animals('cat','Lala', descr, 3, 'Mafraq', '077452132', './img/cat2.jpg');
-  descr = 'sometext';
+  descr = 'This cat has been my friend since childhood, but I will be traveling soon. It can\'t go with me. take care of it';
   new Animals('cat','Frank', descr, 5, 'Salt', '0796532325', './img/cat3.jpg');
-  descr = 'sometext';
+  descr = 'Keep it close, my cat is afraid of strangers';
   new Animals('cat','Sam', descr, 6, 'Sahab', '0789656532', './img/cat4.jpg');
-  descr = 'sometext';
+  descr = 'Unfortunately I have so much work that I can\'t keep it';
   new Animals('cat','Gully', descr, 3, 'Mafraq', '077452132', './img/cat5.jpg');
-  descr = 'sometext';
+  descr = 'You love to play and have fun, give it a lot of food';
   new Animals('cat','Natasha', descr, 4, 'Madabaa', '0790014563', './img/cat6.jpg');
-  descr = 'sometext';
+  descr = ' My cat is afraid of strangers, but it so cute';
   new Animals('cat','Ran', descr, 2, 'Amman', '0784545656', './img/cat7.jpg');
-  descr = 'sometext';
+  descr = 'I love my dog very much, please take care of it';
   new Animals('dog','Boll', descr, 6, 'Mafraq', '0778998874', './img/dog1.jpg');
-  descr = 'sometext';
+  descr = 'Always play with it and give it some time to get used to you';
   new Animals('dog','Jimy', descr, 5, 'Amman', '0772323456', './img/dog2.jpg');
-  descr = 'sometext';
+  descr = 'You love to play and have fun, give it a lot of food';
   new Animals('dog','Bella', descr, 12, 'Salt', '0785236974', './img/dog3.jpg');
-  descr = 'sometext';
+  descr = 'I have a lot of studying so I can\'t take good care of it, It deserves all the love';
   new Animals('dog','Boby', descr, 10, 'Ajlon', '0790114511', './img/dog4.jpg');
-  descr = 'sometext';
+  descr = 'I love my fish very much, please take care of it';
   new Animals('fish','kevin', descr, 2, 'Irbed', '0778956224', './img/fish1.jpg');
-  descr = 'sometext';
+  descr = 'Unfortunately I have so much work that I can\'t keep it';
   new Animals('fish','Millo', descr, 1, 'Aqaba', '0793200155', './img/fish2.png');
-  descr = 'sometext';
+  descr = 'You love to play and have fun, give it a lot of food';
   new Animals('hamster','Olivar', descr, 3, 'Amman', '077224466', './img/hamstor1.jpg');
-  descr = 'sometext';
+  descr = 'I have a lot of studying so I can\'t take good care of it, It deserves all the love';
   new Animals('hamster','Leo', descr, 2, 'Amman', '0780159877', './img/hamstor2.jpg');
-  descr = 'sometext';
+  descr = 'I love my turtle very much, please take care of it';
   new Animals('turtle','Toby', descr, 1, 'Irbid', '0785646589', './img/turtle1.jpg');
-  descr = 'sometext';
+  descr = 'Unfortunately I have so much work that I can\'t keep it';
   new Animals('turtle','Scout', descr, 3, 'Salt', '0796655447', './img/turtle2.jpg');
 
 }
@@ -129,24 +128,36 @@ function render(divSet, typeSet) {
     if (Animals.all[i].type === typeSet) {
       let div = document.createElement('div');
       divSet.appendChild(div);
+
       let img = document.createElement('img');
       img.src = Animals.all[i].img;
       div.appendChild(img);
+
       let h1 = document.createElement('h1');
       h1.textContent = Animals.all[i].name;
+      h1.className = "petName";
       div.appendChild(h1);
-      let p1 = document.createElement('p');
-      p1.textContent = `${Animals.all[i].age} week`;
-      div.appendChild(p1);
+
+      let h2 = document.createElement('h1');
+      h2.textContent = `Age: ${Animals.all[i].age} week`;
+      div.appendChild(h2);
+      h2.className = 'petWeek';
+
       let p2 = document.createElement('p');
-      p2.textContent = Animals.all[i].city;
+      p2.textContent = `City: ${Animals.all[i].city}`;
       div.appendChild(p2);
+      p2.className='pitCity';
+
       let p3 = document.createElement('p');
-      p3.textContent = Animals.all[i].phone;
+      p3.textContent = `Phone: ${Animals.all[i].phone}`;
       div.appendChild(p3);
+      p3.className = 'petPhone';
+
       let h5 = document.createElement('h5');
       h5.textContent = Animals.all[i].description;
       div.appendChild(h5);
+      h5.className='petDesc';
+
       let p4 = document.createElement('p');
       div.appendChild(p4);
       let button = document.createElement('button');
