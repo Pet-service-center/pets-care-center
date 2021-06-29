@@ -1,0 +1,133 @@
+#logo {
+  width: 70px;
+}
+
+header {
+  align-items: center;
+  height: 100px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#HLogo {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#HLogo div p:nth-child(1) {
+  font-family: 'Lobster', cursive;
+  color: orange;
+  font-size: 55px;
+}
+
+#HLogo div p:nth-child(2) {
+  color: orange;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+#nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: orange;
+  font-size: 20px;
+  margin-left: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.4s;
+}
+
+#nav a:hover {
+  color: white;
+  background-color: orange;
+  border-radius: 110px;
+}
+
+hr {
+  background-color: orange;
+  height: 1px;
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+footer {
+  width: 90%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  background-color: orange;
+  color: white;
+}
+footer h6{
+  color: gray;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.upSection {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 30px;
+}
+.flexDiv:first-child {
+  width: 300px;
+  align-content: left;
+  font-size: large;
+}
+/* #footerLogo {
+  width: 100px;
+  height: 100px;
+} */
+.usefulLinks a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: white;
+
+}
+.fastLinks a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: white;
+}
+#navIcons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#navIcons a {
+  width: 25px;
+  text-decoration: none;
+}
+#navIcons img {
+ width: 25px;
+}
+.map iframe {
+  width: 170px;
+  height: 170px;
+  
+}
+footer hr {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+}
+.downSection {
+  margin-top: 20px;
+}
+.downSection p {
+  text-align: center;
+}
