@@ -1,24 +1,88 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+
 
 body {
   margin-top: 20px;
 }
+#logo {
+  width: 220px;
+}
 
-section{
+header {
+  margin-top: 10px;
+  align-items: center;
+  height: 100px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#HLogo {
+  gap: 10px;
+  display: flex;
+  align-items:center;
+  
+}
+span{
+  color: #fe793d;
+}
+#HLogo div p:nth-child(1) {
+  font-family: 'Lobster', cursive;
+  color: rgba(42, 173, 196, 0.911);
+  font-size: 45px;
+  position: absolute;
+  top: 10px;
+  left: 170px;
+}
+
+#HLogo div p:nth-child(2) {
+  color: #fe793d;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 170px;
+}
+
+#nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: rgba(42, 173, 196, 0.911);
+  font-size: 20px;
+  margin-left: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.4s;
+}
+
+#nav a:hover {
+  color: white;
+  background-color: rgba(42, 173, 196, 0.911);
+ 
+}
+
+hr {
+  background-color: #fe793d;
+  height: 1px;
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+main section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin: 100px 200px;
 }
 
-section #pets{
+ main section #pets{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-section #pets img{
+ main section #pets img{
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -28,7 +92,23 @@ section #pets img{
   margin: auto 30px;
   text-align: center;
 }
-
+#pets div h1{
+ text-align: center;
+ font-size: 30px;
+ color: #fb4c1f;
+ line-height: 1.5;
+}
+#pets div p{
+  text-align: center;
+  font-size: 20px;
+  color: rgba(42, 173, 196, 0.911);
+  line-height: 1.5;
+ }
+ #pets div h5{
+text-align: center;
+font-size: 23px;
+color: #fb4c1f ;
+ }
 
 .form-style-4{
 	width: 500px;
@@ -95,4 +175,46 @@ section #pets img{
 .form-style-4 input[type=button]:hover,
 .form-style-4 button{
 background: #394D61;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color:rgba(42, 173, 196, 0.911);
+  color: white;
+  height: 120px;
+}
+#navIcons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#navIcons a {
+  margin-top: 20px;
+  width: 25px;
+ 
+  text-decoration: none;
+}
+#navIcons img {
+  margin-top: 20px;
+ width: 25px;
+ 
+}
+
+footer hr {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+}
+.downSection {
+  margin-top: 20px;
+}
+footer p {
+  text-align: center;
+  margin-top: 10px;
+  color: #000;
+  
+  
 }
