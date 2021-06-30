@@ -1,4 +1,3 @@
-
 #logo {
   width: 220px;
 }
@@ -17,12 +16,13 @@ header {
 #HLogo {
   gap: 10px;
   display: flex;
-  align-items:center;
-  
+  align-items: center;
 }
-span{
+
+span {
   color: #fe793d;
 }
+
 #HLogo div p:nth-child(1) {
   font-family: 'Lobster', cursive;
   color: rgba(42, 173, 196, 0.911);
@@ -55,7 +55,6 @@ span{
 #nav a:hover {
   color: white;
   background-color: rgba(42, 173, 196, 0.911);
- 
 }
 
 hr {
@@ -67,54 +66,46 @@ hr {
   margin-top: 20px;
 }
 
-
-
-  main {
-    display: grid;
-    width: 90%;
-    margin: auto;
+main {
+  display: grid;
+  width: 90%;
+  margin: auto;
 }
 
-
-
 div div {
-  
-    padding: 10px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    margin-top: 30px;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  margin-top: 30px;
 }
 
 div div div {
-    display: grid;
-    grid-template-columns: 1fr;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 500px;
-    font-family: arial;
-    line-height: 0.5;
-
-    margin: auto;
-    padding: 2em;
-    border-radius: 5px 50px;
-    border: 1px solid transparentize(white, 0.5);
-    text-shadow: 0 0 1em transparentize(black, 0.5);
-    background: transparentize(white, 0.8);
-    backdrop-filter: blur(20px);
-    transform: perspective(500px);
-    transform-style: preserve-3d;
-    
-} 
-
-div div div p {
-    color: rgb(68, 67, 67);
-    font-size: 16px;
-   
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  font-family: arial;
+  line-height: 0.5;
+  margin: auto;
+  padding: 2em;
+  border-radius: 5px 50px;
+  border: 1px solid transparentize(white, 0.5);
+  text-shadow: 0 0 1em transparentize(black, 0.5);
+  background: transparentize(white, 0.8);
+  backdrop-filter: blur(20px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
 }
 
-.petName{
+div div div p {
+  color: rgb(68, 67, 67);
+  font-size: 16px;
+}
+
+.petName {
   color: #fe793d;
   padding: 5px;
   font-size: 24;
@@ -123,63 +114,65 @@ div div div p {
   padding: 10px;
   margin: 0px 60px;
 }
-div div div img{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    margin: auto;
-    border-radius: 5px 50px;
+
+div div div img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 5px 50px;
 }
 
-.petDesc{
+.petDesc {
   font-size: 16px;
   line-height: 1.5;
 }
 
-
-
-div div div button{
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: rgba(42, 173, 196, 0.911);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    border-radius: 3px 20px;
-}
-
-h4{
-    margin-top: 10px;
-font-size: 24px;
-position: relative;
-top:20px
-}
-div div div  button:hover {
+div div div button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
   background-color: rgba(42, 173, 196, 0.911);
-    opacity: 0.7;
-  }
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 3px 20px;
+}
 
-#hero{
+h4 {
+  margin-top: 10px;
+  font-size: 24px;
+  position: relative;
+  top: 20px
+}
+
+div div div button:hover {
+  background-color: rgba(42, 173, 196, 0.911);
+  opacity: 0.7;
+}
+
+#hero {
   width: 100%;
   background-image: url('https://images.ctfassets.net/t014ej9w3ur1/18OJ5oUi559G9l7rExCA0E/01594f4f08f94a3c41d8db0ed8f3df75/Hiding_pets.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size:auto;
-  height:470px;
+  background-size: auto;
+  height: 470px;
 }
-#kind{
+
+#kind {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
 }
-#kind button{
+
+#kind button {
   width: 160px;
   height: 160px;
   border-radius: 100px;
-  border: rgba(42, 173, 196, 0.911)  2px solid;
+  border: rgba(42, 173, 196, 0.911) 2px solid;
 }
 
 button img {
@@ -188,14 +181,20 @@ button img {
   border-radius: 100px;
 }
 
-button img:hover{
+button img:hover {
   opacity: 0.7;
 }
 
+
 /* form */
-* {box-sizing: border-box;}
+
+* {
+  box-sizing: border-box;
+}
+
 
 /* Button used to open the contact form - fixed at the bottom of the page */
+
 .open-button {
   background-color: #555;
   color: white;
@@ -206,12 +205,14 @@ button img:hover{
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width:280px;
+  width: 280px;
   z-index: 20;
   border: 2px solid #fe793d;
 }
 
+
 /* The popup form - hidden by default */
+
 .form-popup {
   display: none;
   position: fixed;
@@ -221,15 +222,22 @@ button img:hover{
   z-index: 40;
 }
 
+
 /* Add styles to the form container */
+
 .form-container {
-  max-width:700px;
+  max-width: 700px;
   padding: 5px;
   background-color: white;
 }
 
+
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=number], .form-container select, .form-container textarea {
+
+.form-container input[type=text],
+.form-container input[type=number],
+.form-container select,
+.form-container textarea {
   width: 100%;
   padding: 5px;
   margin: 5px 0 10px 0;
@@ -237,42 +245,54 @@ button img:hover{
   background: #f1f1f1;
 }
 
+
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 
+
 /* Set a style for the submit/login button */
+
 .form-container .btn {
-  background-color: rgba(42, 173, 196, 0.911);;
+  background-color: rgba(42, 173, 196, 0.911);
+  ;
   color: #222;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
   font-weight: bold;
 }
 
+
 /* Add a red background color to the cancel button */
+
 .form-container .cancel {
   background-color: #fbc6d0;
   color: #000;
   font-weight: bold;
 }
 
+
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
-h3{
-    font-size: 25px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    margin-right: 52px;
-    color: rgba(42, 173, 196, 0.911);
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-right: 52px;
+  color: rgba(42, 173, 196, 0.911);
 }
 
 footer {
@@ -281,25 +301,27 @@ footer {
   margin-top: 30px;
   font-size: 20px;
   line-height: 1.5;
-  background-color:rgba(42, 173, 196, 0.911);
+  background-color: rgba(42, 173, 196, 0.911);
   color: white;
   height: 120px;
 }
-#navIcons{
+
+#navIcons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  align-items: center;
 }
+
 #navIcons a {
   margin-top: 20px;
   width: 25px;
- 
   text-decoration: none;
 }
+
 #navIcons img {
   margin-top: 20px;
- width: 25px;
- 
+  width: 25px;
 }
 
 footer hr {
@@ -307,15 +329,13 @@ footer hr {
   width: 90%;
   background-color: white;
 }
+
 .downSection {
   margin-top: 20px;
 }
+
 footer p {
   text-align: center;
   margin-top: 10px;
   color: #000;
-  
-  
 }
-
-
