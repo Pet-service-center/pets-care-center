@@ -16,12 +16,13 @@ header {
 #HLogo {
   gap: 10px;
   display: flex;
-  align-items:center;
-  
+  align-items: center;
 }
-span{
+
+span {
   color: #fe793d;
 }
+
 #HLogo div p:nth-child(1) {
   font-family: 'Lobster', cursive;
   color: rgba(42, 173, 196, 0.911);
@@ -50,18 +51,15 @@ span{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: 0.4s;
 }
+
 .about-section p {
   font-size: 50px;
   border-radius: 60%;
- 
 }
-
-
 
 #nav a:hover {
   color: white;
   background-color: rgba(42, 173, 196, 0.911);
- 
 }
 
 hr {
@@ -73,20 +71,24 @@ hr {
   margin-top: 20px;
 }
 
-main h1{
+main h1 {
   margin-top: 80px;
   font-size: 50px;
   margin-left: 15%;
-  color: rgba(42, 173, 196, 0.911);;
+  color: rgba(42, 173, 196, 0.911);
+  ;
 }
-main p{
-  color: rgba(42, 173, 196, 0.911);;
+
+main p {
+  color: rgba(42, 173, 196, 0.911);
+  ;
   margin-top: 25px;
   margin-left: 15%;
   width: 50%;
   font-size: 30px;
 }
-main h2{
+
+main h2 {
   text-align: center;
   font-size: 60px;
   margin-top: 40px;
@@ -94,40 +96,48 @@ main h2{
   font-weight: bold;
   color: #fe793d;
 }
-#cards{
+
+#cards {
   display: grid;
   gap: 50px;
   width: 90%;
   margin-left: 5%;
 }
-#cards section:nth-child(1),#cards section:nth-child(2) {
+
+#cards section:nth-child(1),
+#cards section:nth-child(2) {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
-#cards section div{
+
+#cards section div {
   width: 400px;
   background-color: rgba(240, 240, 240, 0.911);
 }
-#cards section img{
+
+#cards section img {
   width: 90%;
   height: 400px;
   object-fit: contain;
   margin-left: 5%;
   margin-top: 20px;
 }
-#cards section h3{
+
+#cards section h3 {
   font-size: 25px;
   text-align: center;
   font-weight: bold;
   color: #fe793d;
 }
-#cards section p{
+
+#cards section p {
   font-size: 20px;
   width: 90%;
   margin-left: 5%;
   text-align: center;
   margin-bottom: 20px;
 }
+
 #bottom {
   display: grid;
   background-color: rgba(240, 240, 240, 0.911);
@@ -141,25 +151,27 @@ footer {
   margin-top: 30px;
   font-size: 20px;
   line-height: 1.5;
-  background-color:rgba(42, 173, 196, 0.911);
+  background-color: rgba(42, 173, 196, 0.911);
   color: white;
   height: 120px;
 }
-#navIcons{
+
+#navIcons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  align-items: center;
 }
+
 #navIcons a {
   margin-top: 20px;
   width: 25px;
- 
   text-decoration: none;
 }
+
 #navIcons img {
   margin-top: 20px;
- width: 25px;
- 
+  width: 25px;
 }
 
 footer hr {
@@ -167,13 +179,13 @@ footer hr {
   width: 90%;
   background-color: white;
 }
+
 .downSection {
   margin-top: 20px;
 }
+
 footer p {
   text-align: center;
   margin-top: 10px;
   color: #000;
-  
-  
 }
